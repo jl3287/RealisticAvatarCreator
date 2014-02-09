@@ -1,15 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RACModifiableControl : MonoBehaviour {
+public class RACModifiableControl : MonoBehaviour 
+{
+	private SliderControl sliderControl;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	Vector2 sliderPosition;
 }
