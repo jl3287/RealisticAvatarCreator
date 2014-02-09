@@ -304,14 +304,7 @@ public class UMACrowd : MonoBehaviour
                 tempSlotList.Add(slotLibrary.InstantiateSlot("FemaleHead_Mouth", tempSlotList[headIndex].GetOverlayList()));
 				tempSlotList.Add(slotLibrary.InstantiateSlot("FemaleHead_Nose", tempSlotList[headIndex].GetOverlayList()));
 				
-				
-				randomResult = Random.Range(0,2);
-				if(randomResult == 0){
-					tempSlotList.Add(slotLibrary.InstantiateSlot("FemaleHead_ElvenEars"));
-					tempSlotList[tempSlotList.Count-1].AddOverlay(overlayLibrary.InstantiateOverlay("ElvenEars",skinColor));
-				}else if(randomResult == 1){
-                    tempSlotList.Add(slotLibrary.InstantiateSlot("FemaleHead_Ears", tempSlotList[headIndex].GetOverlayList()));
-				}
+				tempSlotList.Add(slotLibrary.InstantiateSlot("FemaleHead_Ears", tempSlotList[headIndex].GetOverlayList()));
 				
 				randomResult = Random.Range(0,2);
 				if(randomResult == 0){

@@ -83,7 +83,7 @@ public class UMACustomization : MonoBehaviour {
 	}
 	
 
-	void Update () {
+	protected virtual void Update () {
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		

@@ -14,18 +14,26 @@ public class RACCustomization : UMACustomization
 		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
 		{
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
-			InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
+			curControl.sliderControl = InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
+			curControl.sliderControl.actualValue = curControl.defaultValue;
 		}
 	}
 
-	public override void ReceiveValues ()
+	protected override void Update ()
 	{
-		base.ReceiveValues ();
+		base.Update ();
 
-		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
+		if (this.umaData)
 		{
-			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
-			InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
+			for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
+			{
+				RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
+				if (curControl.sliderControl.pressed)
+				{
+					this.editing = true;
+					UpdateUMAShape();
+				}
+			}
 		}
 	}
 }
