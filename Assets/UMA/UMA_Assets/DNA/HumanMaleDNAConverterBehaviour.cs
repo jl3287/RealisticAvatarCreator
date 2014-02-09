@@ -924,20 +924,6 @@ public class HumanMaleDNAConverterBehaviour : DnaConverterBehaviour
 //				Mathf.Clamp(0, -10, 10),
 //				Mathf.Clamp(0.003f + (umaDna.upperMuscle - 0.5f) * 0.265f, -0.015f, 0.085f),
 //				Mathf.Clamp(0, -10, 10)));
-
-		//TODO Put in shoulder positions
-		skeleton.SetPosition(UMASkeleton.StringToHash("LeftShoulder"),
-		    skeleton.GetPosition(UMASkeleton.StringToHash("LeftShoulder")) +
-		    new Vector3(
-				Mathf.Clamp(0, -10, 10),
-				-umaDna.shoulder,
-				Mathf.Clamp(0, -10, 10)));
-		skeleton.SetPosition(UMASkeleton.StringToHash("RightShoulder"),
-		    skeleton.GetPosition(UMASkeleton.StringToHash("RightShoulder")) +
-		    new Vector3(
-				Mathf.Clamp(0, -10, 10),
-				umaDna.shoulder,
-				Mathf.Clamp(0, -10, 10)));
 				
 		//umaData.ChangeBoneMoveRelative("LeftShoulder", new Vector3(
 		//Mathf.Clamp(0, -10, 10),

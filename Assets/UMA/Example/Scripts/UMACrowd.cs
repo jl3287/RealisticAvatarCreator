@@ -25,8 +25,6 @@ public class UMACrowd : MonoBehaviour
 	private int Y;
 	private float umaTimer;
 
-	public List<RACBodyType> possibleTypes;
-
 	void Awake(){
 		string tempVersion = Application.unityVersion;
 		tempVersion = tempVersion.Substring(0,3);
@@ -409,75 +407,7 @@ public class UMACrowd : MonoBehaviour
 		UMADnaHumanoid umaDna = new UMADnaHumanoid();
 		umaData.umaRecipe.umaDna.Add(umaDna.GetType(),umaDna);
 
-		if (this.possibleTypes.Count > 0)
-		{
-			RACBodyType selectedType = this.possibleTypes[0];
-
-			umaDna.height = selectedType.height;
-			umaDna.headSize = selectedType.headSize;
-			umaDna.headWidth = selectedType.headWidth;
-			
-			umaDna.neckThickness = selectedType.neckThickness;
-
-			umaDna.handsSize = selectedType.handsSize;
-			umaDna.feetSize = selectedType.feetSize;
-			umaDna.legSeparation = selectedType.legSeparation;
-			umaDna.waist = selectedType.waist;
-			
-			umaDna.armLength = selectedType.armLength;
-			umaDna.forearmLength = selectedType.forearmLength;
-			umaDna.armWidth = selectedType.armWidth;
-			umaDna.forearmWidth = selectedType.forearmWidth;
-			
-			umaDna.upperMuscle = selectedType.upperMuscle;
-			umaDna.upperWeight = selectedType.upperWeight;
-			
-			umaDna.lowerMuscle = selectedType.lowerMuscle;
-			umaDna.lowerWeight = selectedType.lowerWeight;
-			
-			umaDna.belly = umaDna.upperWeight;
-			umaDna.legsSize = selectedType.legsSize;
-			umaDna.gluteusSize = selectedType.gluteusSize;
-			
-			umaDna.earsSize = selectedType.earsSize;
-			umaDna.earsPosition = selectedType.earsPosition;
-			umaDna.earsRotation = selectedType.earsRotation;
-			
-			umaDna.noseSize = selectedType.noseSize;
-			
-			umaDna.noseCurve = selectedType.noseCurve;
-			umaDna.noseWidth = selectedType.noseWidth;
-			umaDna.noseInclination = selectedType.noseInclination;
-			umaDna.nosePosition = selectedType.nosePosition;
-			umaDna.nosePronounced = selectedType.nosePronounced;
-			umaDna.noseFlatten = selectedType.noseFlatten;
-			
-			umaDna.chinSize = selectedType.chinSize;
-			umaDna.chinPronounced = selectedType.chinPronounced;
-			umaDna.chinPosition = selectedType.chinPosition;
-			
-			umaDna.mandibleSize = selectedType.mandibleSize;
-			umaDna.jawsSize = selectedType.jawsSize;
-			umaDna.jawsPosition = selectedType.jawsPosition;
-			
-			umaDna.cheekSize = selectedType.cheekSize;
-			umaDna.cheekPosition = selectedType.cheekPosition;
-			umaDna.lowCheekPronounced = selectedType.lowCheekPronounced;
-			umaDna.lowCheekPosition = selectedType.lowCheekPosition;
-			
-			umaDna.foreheadSize = selectedType.foreheadSize;
-			umaDna.foreheadPosition = selectedType.foreheadPosition;
-			
-			umaDna.lipsSize = selectedType.lipsSize;
-			umaDna.mouthSize = selectedType.mouthSize;
-			umaDna.eyeRotation = selectedType.eyeRotation;
-			umaDna.eyeSize = selectedType.eyeSize;
-			umaDna.breastSize = selectedType.breastSize;
-
-			//TODO add any new types here
-			umaDna.shoulder = selectedType.shoulder;
-		}		
-		else if(randomDna){
+		if(randomDna){
 			
 			umaDna.height = Random.Range(0.3f,0.5f);
 			umaDna.headSize = Random.Range(0.485f,0.515f);
@@ -554,8 +484,6 @@ public class UMACrowd : MonoBehaviour
 			umaDna.eyeRotation = Random.Range(0.3f,0.8f);
 			umaDna.eyeSize = Random.Range(0.3f,0.8f);
 			umaDna.breastSize = Random.Range(0.3f,0.8f);
-			
-			
 		}
 	}
 	
@@ -570,20 +498,7 @@ public class UMACrowd : MonoBehaviour
 		var umaRecipe = umaDynamicAvatar.umaData.umaRecipe;
 		UMACrowdRandomSet.CrowdRaceData race = null;
 		
-		if (this.possibleTypes.Count > 0)
-		{
-			RACBodyType selectedType = this.possibleTypes[0];
-
-			if (selectedType.isMale)
-			{
-				umaRecipe.SetRace(raceLibrary.GetRace("HumanMale"));
-			}
-			else
-			{
-				umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
-			}
-		}
-		else if (randomPool != null && randomPool.Length > 0)
+		if (randomPool != null && randomPool.Length > 0)
 		{
 			int randomResult = Random.Range(0, randomPool.Length);
 			race = randomPool[randomResult].data;

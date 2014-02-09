@@ -18,9 +18,9 @@ public class UMACustomization : MonoBehaviour {
 
 	public bool editing = false;
 	
-	protected virtual void Start () {
-		//TODO Increase when we add a slider
-		sliderControlList = new SliderControl[47];	
+	protected virtual void Start () 
+	{
+		sliderControlList = new SliderControl[46];	
 		//Changed slider order
 		
 		sliderControlList[0] = InstantiateSlider("height",0,0);
@@ -80,9 +80,6 @@ public class UMACustomization : MonoBehaviour {
 		sliderControlList[36] = InstantiateSlider("breatsSize",0,11);
 		sliderControlList[41] = InstantiateSlider("belly",1,11);
 		sliderControlList[42] = InstantiateSlider("waist",2,11);
-
-		//TODO add more controls here
-		sliderControlList[46] = InstantiateSlider("shoulder",5,9, 0, 1.0f);
 	}
 	
 
@@ -123,7 +120,7 @@ public class UMACustomization : MonoBehaviour {
 		ReceiveValues();
 	}
 	
-	public SliderControl InstantiateSlider(string name, int X, int Y, float minValue = 0.0f, float maxValue = 1.0f){
+	public SliderControl InstantiateSlider(string name, float X, float Y, float minValue = 0.0f, float maxValue = 1.0f){
 		Transform TempSlider;
 		TempSlider = Instantiate(sliderPrefab,Vector3.zero, Quaternion.identity) as Transform;
 		TempSlider.parent = transform;
@@ -156,7 +153,7 @@ public class UMACustomization : MonoBehaviour {
 		umaData.Dirty();
 	}
 	
-	public void ReceiveValues(){
+	public virtual void ReceiveValues(){
 		if(umaDna != null){
 			sliderControlList[0].actualValue = umaDna.height;
 			
@@ -220,9 +217,6 @@ public class UMACustomization : MonoBehaviour {
 			
 			sliderControlList[41].actualValue = umaDna.belly;
 			sliderControlList[42].actualValue = umaDna.waist;
-
-			//TODO Add slider controls here
-			sliderControlList[46].actualValue = umaDna.shoulder;
 			
 //			for(int i = 0; i < sliderControlList.Length; i++){
 //				sliderControlList[i].ForceUpdate();
@@ -294,9 +288,6 @@ public class UMACustomization : MonoBehaviour {
 			
 			umaDna.belly = sliderControlList[41].actualValue;
 			umaDna.waist = sliderControlList[42].actualValue;
-
-			//TODO put stuff here
-			umaDna.shoulder = sliderControlList[46].actualValue;
 		}
 	}
 }
