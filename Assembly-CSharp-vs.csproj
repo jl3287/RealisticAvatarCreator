@@ -71,6 +71,7 @@
      <Compile Include="Assets\UMA\Example\Scripts\jiggleBone.cs" />
      <Compile Include="Assets\UMA\UMA_Assets\DNA\HumanFemaleDNAConverterBehaviour.cs" />
      <Compile Include="Assets\UMA\UMA_Assets\DNA\HumanMaleDNAConverterBehaviour.cs" />
+     <Compile Include="Assets\UMA\UMA_Assets\DNA\RACHumanFemaleDNAConverterBehaviour.cs" />
      <Compile Include="Assets\UMA\UMA_Assets\DNA\UMADna.cs" />
      <Compile Include="Assets\UMA\UMA_Assets\DNA\UMADnaHumanoid.cs" />
      <Compile Include="Assets\UMA\UMA_Generated\DnaHelpers\UMADnaHumanoid_Generated.cs" />

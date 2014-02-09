@@ -270,7 +270,7 @@ public class UMACrowd : MonoBehaviour
             umaData.umaRecipe.slotDataList[6] = slotLibrary.InstantiateSlot("MaleFeet", umaData.umaRecipe.slotDataList[2].GetOverlayList());
 			
 		}
-        else if (umaData.umaRecipe.raceData.raceName == "HumanFemale")
+        else if (umaData.umaRecipe.raceData.raceName == "RACHumanFemale")
         {
 			int randomResult = 0;
 			//Female Avatar
@@ -580,7 +580,7 @@ public class UMACrowd : MonoBehaviour
 			}
 			else
 			{
-				umaRecipe.SetRace(raceLibrary.GetRace("HumanFemale"));
+				umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
 			}
 		}
 		else if (randomPool != null && randomPool.Length > 0)
@@ -591,7 +591,7 @@ public class UMACrowd : MonoBehaviour
 		}
 		else
 		{		
-			umaRecipe.SetRace(raceLibrary.GetRace("HumanFemale"));
+			umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
 		}
 
 		SetUMAData();
