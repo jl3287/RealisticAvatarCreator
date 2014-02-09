@@ -6,10 +6,13 @@ public class RACCustomization : UMACustomization
 {
 	public List<RACModifiableControl> modifiableControlList = new List<RACModifiableControl>();
 
+	public bool useOldSlider = false;
+
 	// Use this for initialization
 	protected void Start () 
 	{
-		//base.Start();
+		if (useOldSlider)
+			base.Start();
 
 		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
 		{
@@ -19,14 +22,16 @@ public class RACCustomization : UMACustomization
 		}
 	}
 
-	public override void ReceiveValues ()
-	{
-		//base.ReceiveValues ();
-	}
-
 	public override void TransferValues ()
 	{
-		//base.TransferValues ();
+		if (useOldSlider)
+			base.TransferValues ();
+	}
+
+	public override void ReceiveValues ()
+	{
+		if (useOldSlider)
+			base.ReceiveValues ();
 	}
 
 	protected override void Update ()
