@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\RACScripts\RACBodyType.cs" />
      <Compile Include="Assets\RACScripts\RACCrowd.cs" />
      <Compile Include="Assets\RACScripts\RACCustomization.cs" />
      <Compile Include="Assets\RACScripts\RACModifiableControl.cs" />

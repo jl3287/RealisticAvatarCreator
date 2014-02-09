@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RACScripts\RACModifiableControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UMA\Example\Scripts\UMACrowd.cs">
     <Files>
-      <File FileName="Assets\UMA\Example\Scripts\UMACustomization.cs" Line="14" Column="43" />
-      <File FileName="Assets\RACScripts\RACCustomization.cs" Line="7" Column="34" />
-      <File FileName="Assets\RACScripts\RACModifiableControl.cs" Line="8" Column="25" />
+      <File FileName="Assets\UMA\Example\Scripts\UMACustomization.cs" Line="291" Column="53" />
+      <File FileName="Assets\RACScripts\RACCustomization.cs" Line="8" Column="1" />
+      <File FileName="Assets\RACScripts\RACModifiableControl.cs" Line="15" Column="1" />
+      <File FileName="Assets\UMA\UMA_Assets\DNA\RACHumanFemaleDNAConverterBehaviour.cs" Line="7" Column="2" />
+      <File FileName="Assets\UMA\Example\Scripts\UMACrowd.cs" Line="26" Column="25" />
+      <File FileName="Assets\UMA\UMA_Assets\DNA\UMADnaHumanoid.cs" Line="65" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ClassPad">
