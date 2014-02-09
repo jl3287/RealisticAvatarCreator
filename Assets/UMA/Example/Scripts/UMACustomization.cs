@@ -225,7 +225,7 @@ public class UMACustomization : MonoBehaviour {
 	}
 	
 	
-	public void TransferValues(){
+	public virtual void TransferValues(){
 		if(umaDna != null){
 			umaDna.height = sliderControlList[0].actualValue;
 			umaDna.headSize = sliderControlList[1].actualValue;

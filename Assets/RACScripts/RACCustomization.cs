@@ -9,7 +9,7 @@ public class RACCustomization : UMACustomization
 	// Use this for initialization
 	protected void Start () 
 	{
-		base.Start();
+		//base.Start();
 
 		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
 		{
@@ -17,6 +17,16 @@ public class RACCustomization : UMACustomization
 			curControl.sliderControl = InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
 			curControl.sliderControl.actualValue = curControl.defaultValue;
 		}
+	}
+
+	public override void ReceiveValues ()
+	{
+		//base.ReceiveValues ();
+	}
+
+	public override void TransferValues ()
+	{
+		//base.TransferValues ();
 	}
 
 	protected override void Update ()
