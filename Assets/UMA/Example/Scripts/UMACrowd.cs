@@ -479,6 +479,22 @@ public class UMACrowd : MonoBehaviour
 			umaDna.breastSize = Random.Range(0.3f,0.8f);
 		}
 	}
+
+	protected virtual UMACrowdRandomSet.CrowdRaceData SetGeneratedUMARace(UMAData.UMARecipe umaRecipe)
+	{
+		if (randomPool != null && randomPool.Length > 0)
+		{
+			int randomResult = Random.Range(0, randomPool.Length);
+			UMACrowdRandomSet.CrowdRaceData race = randomPool[randomResult].data;
+			umaRecipe.SetRace(raceLibrary.GetRace(race.raceID));
+			return race;
+		}
+		else
+		{
+			umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
+			return null;
+		}
+	}
 	
 	void GenerateOneUMA(){
 		var newGO = new GameObject("Generated Character");
@@ -489,18 +505,7 @@ public class UMACrowd : MonoBehaviour
 		umaDynamicAvatar.umaGenerator = generator;
 		umaData.umaGenerator = generator;
 		var umaRecipe = umaDynamicAvatar.umaData.umaRecipe;
-		UMACrowdRandomSet.CrowdRaceData race = null;
-		
-		if (randomPool != null && randomPool.Length > 0)
-		{
-			int randomResult = Random.Range(0, randomPool.Length);
-			race = randomPool[randomResult].data;
-			umaRecipe.SetRace(raceLibrary.GetRace(race.raceID));
-		}
-		else
-		{		
-			umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
-		}
+		UMACrowdRandomSet.CrowdRaceData race = SetGeneratedUMARace(umaRecipe);
 
 		SetUMAData();
 		GenerateUMAShapes();

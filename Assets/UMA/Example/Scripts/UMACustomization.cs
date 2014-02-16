@@ -87,11 +87,13 @@ public class UMACustomization : MonoBehaviour {
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		
-		if(Input.GetMouseButtonDown(1)){
-			if (Physics.Raycast(ray, out hit, 100)){
-				
+		if(Input.GetMouseButtonDown(1))
+		{
+			if (Physics.Raycast(ray, out hit, 100) && hit.collider && hit.collider.transform && hit.collider.transform.parent && hit.collider.transform.parent.parent)
+			{
 				umaData = hit.collider.transform.parent.parent.GetComponent<UMAData>();
-				if(umaData){
+				if(umaData)
+				{
 					AvatarSetup();
 				}
 			}
@@ -109,13 +111,15 @@ public class UMACustomization : MonoBehaviour {
 		}
 	}
 
-	public void AvatarSetup(){
+	public void AvatarSetup()
+	{
 		umaDynamicAvatar = umaData.gameObject.GetComponent<UMADynamicAvatar>();
 		
-		if(cameraTrack){
+		if(cameraTrack)
+		{
 			cameraTrack.target = umaData.umaRoot.transform;
 		}
-		
+
 		umaDna = umaData.umaRecipe.umaDna[typeof(UMADnaHumanoid)] as UMADnaHumanoid;
 		ReceiveValues();
 	}

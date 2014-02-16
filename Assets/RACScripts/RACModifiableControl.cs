@@ -23,5 +23,5 @@ public class RACModifiableControl : MonoBehaviour
 
 	public float maxValue = 1.0f;
 	
-	public string modifiedBodyPart = "Global";
+	public string[] modifiedBodyParts = {"Global"};
 }

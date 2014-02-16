@@ -20,43 +20,46 @@ public class RACHumanFemaleDNAConverterBehaviour : HumanFemaleDNAConverterBehavi
 
 		HumanFemaleDNAConverterBehaviour.UpdateUMAFemaleDNABones (umaData, skeleton);
 
-		List<RACModifiableControl> controls = RACHumanFemaleDNAConverterBehaviour.customisation.modifiableControlList;
+		List<RACModifiableControl> controls = RACHumanFemaleDNAConverterBehaviour.customisation.ControlList;
 
 		for (int iSliderIndex = 0; iSliderIndex < controls.Count; ++iSliderIndex)		
 		{
 			RACModifiableControl curControl = controls[iSliderIndex];
 
-			int skeletonStringToHash = UMASkeleton.StringToHash(curControl.modifiedBodyPart);
-
-			//Get the starting information
-			Vector3 startingInformation = Vector3.zero;
-			if (curControl.sliderStyle == RACModifiableControl.SliderStyle.POSITION)
+			for (int iBodyPartIndex = 0; iBodyPartIndex < curControl.modifiedBodyParts.Length; ++iBodyPartIndex)
 			{
-				startingInformation = skeleton.GetPosition(skeletonStringToHash);
+				int skeletonStringToHash = UMASkeleton.StringToHash(curControl.modifiedBodyParts[iBodyPartIndex]);
 
-				//Modify it
-				if (curControl.effectsX)
-					startingInformation.x += curControl.sliderControl.actualValue;
-				if (curControl.effectsY)
-					startingInformation.y += curControl.sliderControl.actualValue;
-				if (curControl.effectsZ)
-					startingInformation.z += curControl.sliderControl.actualValue;
-				
-				skeleton.SetPosition(skeletonStringToHash, startingInformation);
-			}
-			else if (curControl.sliderStyle == RACModifiableControl.SliderStyle.SCALE)
-			{
-				startingInformation = skeleton.GetScale(skeletonStringToHash);
-				
-				//Modify it
-				if (curControl.effectsX)
-					startingInformation.x = curControl.sliderControl.actualValue;
-				if (curControl.effectsY)
-					startingInformation.y = curControl.sliderControl.actualValue;
-				if (curControl.effectsZ)
-					startingInformation.z = curControl.sliderControl.actualValue;
+				//Get the starting information
+				Vector3 startingInformation = Vector3.zero;
+				if (curControl.sliderStyle == RACModifiableControl.SliderStyle.POSITION)
+				{
+					startingInformation = skeleton.GetPosition(skeletonStringToHash);
 
-				skeleton.SetScale(skeletonStringToHash, startingInformation);
+					//Modify it
+					if (curControl.effectsX)
+						startingInformation.x += curControl.sliderControl.actualValue;
+					if (curControl.effectsY)
+						startingInformation.y += curControl.sliderControl.actualValue;
+					if (curControl.effectsZ)
+						startingInformation.z += curControl.sliderControl.actualValue;
+					
+					skeleton.SetPosition(skeletonStringToHash, startingInformation);
+				}
+				else if (curControl.sliderStyle == RACModifiableControl.SliderStyle.SCALE)
+				{
+					startingInformation = skeleton.GetScale(skeletonStringToHash);
+					
+					//Modify it
+					if (curControl.effectsX)
+						startingInformation.x = curControl.sliderControl.actualValue;
+					if (curControl.effectsY)
+						startingInformation.y = curControl.sliderControl.actualValue;
+					if (curControl.effectsZ)
+						startingInformation.z = curControl.sliderControl.actualValue;
+
+					skeleton.SetScale(skeletonStringToHash, startingInformation);
+				}
 			}
 		}
 	}

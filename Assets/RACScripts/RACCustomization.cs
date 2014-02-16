@@ -4,9 +4,11 @@ using System.Collections.Generic;
 
 public class RACCustomization : UMACustomization 
 {
-	public List<RACModifiableControl> modifiableControlList = new List<RACModifiableControl>();
+	private List<RACModifiableControl> modifiableControlList = new List<RACModifiableControl>();
 
 	public bool useOldSlider = false;
+
+	public List<RACModifiableControl> ControlList {get{return this.modifiableControlList;} private set{}}
 
 	// Use this for initialization
 	protected void Start () 
@@ -14,6 +16,22 @@ public class RACCustomization : UMACustomization
 		if (useOldSlider)
 			base.Start();
 
+		InstanciateNewSliders(this.modifiableControlList);
+	}
+
+	public void InstanciateNewSliders(List<RACModifiableControl> newModifiableControlList)
+	{
+		//Destroy any old sliders
+		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
+		{			
+			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
+			Destroy(curControl.sliderControl.gameObject);
+		}
+
+		//Set our sliders to be new sliders
+		this.modifiableControlList = newModifiableControlList;
+
+		//Use new sliders
 		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
 		{
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
