@@ -15,14 +15,21 @@ public class RACCrowd : UMACrowd
 
 	protected override UMACrowdRandomSet.CrowdRaceData SetGeneratedUMARace (UMA.UMAData.UMARecipe umaRecipe)
 	{
-		if (bodyTypeOfCrowd.isFemale)
-			umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
+		if (this.bodyTypeOfCrowd != null)
+		{
+			if (bodyTypeOfCrowd.isFemale)
+				umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
+			else
+				umaRecipe.SetRace(raceLibrary.GetRace("HumanMale"));
+
+			this.customization.InstanciateNewSliders(bodyTypeOfCrowd.ControlList);
+
+			return null;
+		}
 		else
-			umaRecipe.SetRace(raceLibrary.GetRace("HumanMale"));
-
-		this.customization.InstanciateNewSliders(bodyTypeOfCrowd.modifiableControls);
-
-		return null;
+		{
+			return base.SetGeneratedUMARace(umaRecipe);
+		}
 	}
 
 }

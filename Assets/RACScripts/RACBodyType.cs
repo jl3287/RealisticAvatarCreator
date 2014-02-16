@@ -5,14 +5,23 @@ using System.Linq;
 
 public class RACBodyType : MonoBehaviour 
 {
-	[HideInInspector]
-	public List<RACModifiableControl> modifiableControls;
-
+	private List<RACModifiableControl> modifiableControlsList = new List<RACModifiableControl>();
+	
 	public bool isFemale = true;
 
-	private void Awake()
+	public List<RACModifiableControl> ControlList 
 	{
-		RACModifiableControl[] controlsArray = this.GetComponentsInChildren<RACModifiableControl>() as RACModifiableControl[];
-		this.modifiableControls = controlsArray.ToList();
+		get
+		{
+			if (this.modifiableControlsList.Count == 0)
+			{
+				RACModifiableControl[] controlsArray = this.GetComponentsInChildren<RACModifiableControl>() as RACModifiableControl[];
+				this.modifiableControlsList = controlsArray.ToList();
+			}
+
+			return this.modifiableControlsList;
+		}
+
+		set{}
 	}
 }

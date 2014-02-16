@@ -13,7 +13,7 @@ public class RACModifiableControl : MonoBehaviour
 	public bool effectsY = false;
 	public bool effectsZ = false;
 
-	public string sliderName;
+	public string sliderName = "Slider Name";
 
 	public Vector2 sliderPosition;
 	
