@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RACScripts\RACCustomization.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UMA\Example\Scripts\SliderControl.cs">
     <Files>
-      <File FileName="Assets\UMA\Example\Scripts\SliderControl.cs" Line="43" Column="2" />
-      <File FileName="Assets\RACScripts\RACModifiableControl.cs" Line="20" Column="22" />
-      <File FileName="Assets\RACScripts\RACCustomization.cs" Line="21" Column="44" />
-      <File FileName="Assets\UMA\Example\Scripts\UMACustomization.cs" Line="88" Column="18" />
-      <File FileName="Assets\UMA\UMA_Assets\DNA\RACHumanFemaleDNAConverterBehaviour.cs" Line="50" Column="5" />
+      <File FileName="Assets\UMA\Example\Scripts\UMACustomization.cs" Line="92" Column="2" />
+      <File FileName="Assets\UMA\Example\Scripts\SliderControl.cs" Line="62" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
