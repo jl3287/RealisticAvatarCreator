@@ -31,23 +31,33 @@ public class RACHumanFemaleDNAConverterBehaviour : HumanFemaleDNAConverterBehavi
 			//Get the starting information
 			Vector3 startingInformation = Vector3.zero;
 			if (curControl.sliderStyle == RACModifiableControl.SliderStyle.POSITION)
+			{
 				startingInformation = skeleton.GetPosition(skeletonStringToHash);
-			else if (curControl.sliderStyle == RACModifiableControl.SliderStyle.SCALE)
-				startingInformation = skeleton.GetScale(skeletonStringToHash);
 
-			//Modify it
-			if (curControl.effectsX)
-				startingInformation.x += curControl.sliderControl.actualValue;
-			if (curControl.effectsY)
-				startingInformation.y += curControl.sliderControl.actualValue;
-			if (curControl.effectsZ)
-				startingInformation.z += curControl.sliderControl.actualValue;
-
-			//Save it out
-			if (curControl.sliderStyle == RACModifiableControl.SliderStyle.POSITION)
+				//Modify it
+				if (curControl.effectsX)
+					startingInformation.x += curControl.sliderControl.actualValue;
+				if (curControl.effectsY)
+					startingInformation.y += curControl.sliderControl.actualValue;
+				if (curControl.effectsZ)
+					startingInformation.z += curControl.sliderControl.actualValue;
+				
 				skeleton.SetPosition(skeletonStringToHash, startingInformation);
+			}
 			else if (curControl.sliderStyle == RACModifiableControl.SliderStyle.SCALE)
+			{
+				startingInformation = skeleton.GetScale(skeletonStringToHash);
+				
+				//Modify it
+				if (curControl.effectsX)
+					startingInformation.x = curControl.sliderControl.actualValue;
+				if (curControl.effectsY)
+					startingInformation.y = curControl.sliderControl.actualValue;
+				if (curControl.effectsZ)
+					startingInformation.z = curControl.sliderControl.actualValue;
+
 				skeleton.SetScale(skeletonStringToHash, startingInformation);
+			}
 		}
 	}
 }

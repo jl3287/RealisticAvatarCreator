@@ -128,7 +128,7 @@ public class UMACustomization : MonoBehaviour {
 		SliderControl tempSlider = TempSlider.GetComponent("SliderControl") as SliderControl;
 		tempSlider.minValue = minValue;
 		tempSlider.maxValue = maxValue;
-		tempSlider.actualValue = 0.5f;
+		tempSlider.percentOfBar = 0.5f;
 		tempSlider.descriptionText.text = name;
 		tempSlider.sliderOffset.x = 20 + X*100;
 		tempSlider.sliderOffset.y = -20 - Y*60;
@@ -155,68 +155,68 @@ public class UMACustomization : MonoBehaviour {
 	
 	public virtual void ReceiveValues(){
 		if(umaDna != null){
-			sliderControlList[0].actualValue = umaDna.height;
+			sliderControlList[0].percentOfBar = umaDna.height;
 			
-			sliderControlList[1].actualValue = umaDna.headSize ;
-			sliderControlList[43].actualValue = umaDna.headWidth ;
+			sliderControlList[1].percentOfBar = umaDna.headSize ;
+			sliderControlList[43].percentOfBar = umaDna.headWidth ;
 		
-			sliderControlList[2].actualValue = umaDna.neckThickness;
+			sliderControlList[2].percentOfBar = umaDna.neckThickness;
 			
-			sliderControlList[3].actualValue = umaDna.armLength;
-			sliderControlList[4].actualValue = umaDna.handsSize;
-			sliderControlList[5].actualValue = umaDna.feetSize;
-			sliderControlList[6].actualValue = umaDna.legSeparation;
+			sliderControlList[3].percentOfBar = umaDna.armLength;
+			sliderControlList[4].percentOfBar = umaDna.handsSize;
+			sliderControlList[5].percentOfBar = umaDna.feetSize;
+			sliderControlList[6].percentOfBar = umaDna.legSeparation;
 			
 			
-			sliderControlList[7].actualValue = umaDna.upperMuscle;
-			sliderControlList[8].actualValue = umaDna.lowerMuscle;
-			sliderControlList[9].actualValue = umaDna.upperWeight;
-			sliderControlList[10].actualValue = umaDna.lowerWeight;
+			sliderControlList[7].percentOfBar = umaDna.upperMuscle;
+			sliderControlList[8].percentOfBar = umaDna.lowerMuscle;
+			sliderControlList[9].percentOfBar = umaDna.upperWeight;
+			sliderControlList[10].percentOfBar = umaDna.lowerWeight;
 		
-			sliderControlList[11].actualValue = umaDna.legsSize;
+			sliderControlList[11].percentOfBar = umaDna.legsSize;
 			
-			sliderControlList[12].actualValue = umaDna.earsSize;
-			sliderControlList[13].actualValue = umaDna.earsPosition;
-			sliderControlList[14].actualValue = umaDna.earsRotation;
+			sliderControlList[12].percentOfBar = umaDna.earsSize;
+			sliderControlList[13].percentOfBar = umaDna.earsPosition;
+			sliderControlList[14].percentOfBar = umaDna.earsRotation;
 			
-			sliderControlList[15].actualValue = umaDna.noseSize;
+			sliderControlList[15].percentOfBar = umaDna.noseSize;
 			
-			sliderControlList[16].actualValue = umaDna.noseCurve;
-			sliderControlList[17].actualValue = umaDna.noseWidth;
-			sliderControlList[18].actualValue = umaDna.noseInclination;
-			sliderControlList[19].actualValue = umaDna.nosePosition;
-			sliderControlList[20].actualValue = umaDna.nosePronounced;
-			sliderControlList[21].actualValue = umaDna.noseFlatten;
+			sliderControlList[16].percentOfBar = umaDna.noseCurve;
+			sliderControlList[17].percentOfBar = umaDna.noseWidth;
+			sliderControlList[18].percentOfBar = umaDna.noseInclination;
+			sliderControlList[19].percentOfBar = umaDna.nosePosition;
+			sliderControlList[20].percentOfBar = umaDna.nosePronounced;
+			sliderControlList[21].percentOfBar = umaDna.noseFlatten;
 			
-			sliderControlList[22].actualValue = umaDna.chinSize;
-			sliderControlList[23].actualValue = umaDna.chinPronounced;
-			sliderControlList[24].actualValue = umaDna.chinPosition;
+			sliderControlList[22].percentOfBar = umaDna.chinSize;
+			sliderControlList[23].percentOfBar = umaDna.chinPronounced;
+			sliderControlList[24].percentOfBar = umaDna.chinPosition;
 			
-			sliderControlList[25].actualValue = umaDna.mandibleSize;
-			sliderControlList[26].actualValue = umaDna.jawsSize;
-			sliderControlList[27].actualValue = umaDna.jawsPosition;
+			sliderControlList[25].percentOfBar = umaDna.mandibleSize;
+			sliderControlList[26].percentOfBar = umaDna.jawsSize;
+			sliderControlList[27].percentOfBar = umaDna.jawsPosition;
 			
-			sliderControlList[28].actualValue = umaDna.cheekSize;
-			sliderControlList[29].actualValue = umaDna.cheekPosition;
-			sliderControlList[30].actualValue = umaDna.lowCheekPronounced;
-			sliderControlList[31].actualValue = umaDna.lowCheekPosition;
+			sliderControlList[28].percentOfBar = umaDna.cheekSize;
+			sliderControlList[29].percentOfBar = umaDna.cheekPosition;
+			sliderControlList[30].percentOfBar = umaDna.lowCheekPronounced;
+			sliderControlList[31].percentOfBar = umaDna.lowCheekPosition;
 			
-			sliderControlList[32].actualValue = umaDna.foreheadSize;
-			sliderControlList[33].actualValue = umaDna.foreheadPosition;
+			sliderControlList[32].percentOfBar = umaDna.foreheadSize;
+			sliderControlList[33].percentOfBar = umaDna.foreheadPosition;
 			
-			sliderControlList[44].actualValue = umaDna.eyeSize;
-			sliderControlList[45].actualValue = umaDna.eyeRotation;
-			sliderControlList[34].actualValue = umaDna.lipsSize;
-			sliderControlList[35].actualValue = umaDna.mouthSize;
-			sliderControlList[36].actualValue = umaDna.breastSize;	
-			sliderControlList[37].actualValue = umaDna.gluteusSize;	
+			sliderControlList[44].percentOfBar = umaDna.eyeSize;
+			sliderControlList[45].percentOfBar = umaDna.eyeRotation;
+			sliderControlList[34].percentOfBar = umaDna.lipsSize;
+			sliderControlList[35].percentOfBar = umaDna.mouthSize;
+			sliderControlList[36].percentOfBar = umaDna.breastSize;	
+			sliderControlList[37].percentOfBar = umaDna.gluteusSize;	
 			
-			sliderControlList[38].actualValue = umaDna.armWidth;
-			sliderControlList[39].actualValue = umaDna.forearmLength;
-			sliderControlList[40].actualValue = umaDna.forearmWidth;
+			sliderControlList[38].percentOfBar = umaDna.armWidth;
+			sliderControlList[39].percentOfBar = umaDna.forearmLength;
+			sliderControlList[40].percentOfBar = umaDna.forearmWidth;
 			
-			sliderControlList[41].actualValue = umaDna.belly;
-			sliderControlList[42].actualValue = umaDna.waist;
+			sliderControlList[41].percentOfBar = umaDna.belly;
+			sliderControlList[42].percentOfBar = umaDna.waist;
 			
 //			for(int i = 0; i < sliderControlList.Length; i++){
 //				sliderControlList[i].ForceUpdate();
@@ -227,67 +227,67 @@ public class UMACustomization : MonoBehaviour {
 	
 	public virtual void TransferValues(){
 		if(umaDna != null){
-			umaDna.height = sliderControlList[0].actualValue;
-			umaDna.headSize = sliderControlList[1].actualValue;
-			umaDna.headWidth = sliderControlList[43].actualValue;
+			umaDna.height = sliderControlList[0].percentOfBar;
+			umaDna.headSize = sliderControlList[1].percentOfBar;
+			umaDna.headWidth = sliderControlList[43].percentOfBar;
 			
-			umaDna.neckThickness = sliderControlList[2].actualValue;
+			umaDna.neckThickness = sliderControlList[2].percentOfBar;
 			
-			umaDna.armLength = sliderControlList[3].actualValue;
-			umaDna.handsSize = sliderControlList[4].actualValue;
-			umaDna.feetSize = sliderControlList[5].actualValue;
-			umaDna.legSeparation = sliderControlList[6].actualValue;
+			umaDna.armLength = sliderControlList[3].percentOfBar;
+			umaDna.handsSize = sliderControlList[4].percentOfBar;
+			umaDna.feetSize = sliderControlList[5].percentOfBar;
+			umaDna.legSeparation = sliderControlList[6].percentOfBar;
 			
 			
-			umaDna.upperMuscle = sliderControlList[7].actualValue;
-			umaDna.lowerMuscle = sliderControlList[8].actualValue;
-			umaDna.upperWeight = sliderControlList[9].actualValue;
-			umaDna.lowerWeight = sliderControlList[10].actualValue;
+			umaDna.upperMuscle = sliderControlList[7].percentOfBar;
+			umaDna.lowerMuscle = sliderControlList[8].percentOfBar;
+			umaDna.upperWeight = sliderControlList[9].percentOfBar;
+			umaDna.lowerWeight = sliderControlList[10].percentOfBar;
 		
-			umaDna.legsSize = sliderControlList[11].actualValue;
+			umaDna.legsSize = sliderControlList[11].percentOfBar;
 			
-			umaDna.earsSize = sliderControlList[12].actualValue;
-			umaDna.earsPosition = sliderControlList[13].actualValue;
-			umaDna.earsRotation = sliderControlList[14].actualValue;
+			umaDna.earsSize = sliderControlList[12].percentOfBar;
+			umaDna.earsPosition = sliderControlList[13].percentOfBar;
+			umaDna.earsRotation = sliderControlList[14].percentOfBar;
 			
-			umaDna.noseSize = sliderControlList[15].actualValue;
+			umaDna.noseSize = sliderControlList[15].percentOfBar;
 			
-			umaDna.noseCurve = sliderControlList[16].actualValue;
-			umaDna.noseWidth = sliderControlList[17].actualValue;
-			umaDna.noseInclination = sliderControlList[18].actualValue;
-			umaDna.nosePosition = sliderControlList[19].actualValue;
-			umaDna.nosePronounced = sliderControlList[20].actualValue;
-			umaDna.noseFlatten = sliderControlList[21].actualValue;
+			umaDna.noseCurve = sliderControlList[16].percentOfBar;
+			umaDna.noseWidth = sliderControlList[17].percentOfBar;
+			umaDna.noseInclination = sliderControlList[18].percentOfBar;
+			umaDna.nosePosition = sliderControlList[19].percentOfBar;
+			umaDna.nosePronounced = sliderControlList[20].percentOfBar;
+			umaDna.noseFlatten = sliderControlList[21].percentOfBar;
 			
-			umaDna.chinSize = sliderControlList[22].actualValue;
-			umaDna.chinPronounced = sliderControlList[23].actualValue;
-			umaDna.chinPosition = sliderControlList[24].actualValue;
+			umaDna.chinSize = sliderControlList[22].percentOfBar;
+			umaDna.chinPronounced = sliderControlList[23].percentOfBar;
+			umaDna.chinPosition = sliderControlList[24].percentOfBar;
 			
-			umaDna.mandibleSize = sliderControlList[25].actualValue;
-			umaDna.jawsSize = sliderControlList[26].actualValue;
-			umaDna.jawsPosition = sliderControlList[27].actualValue;
+			umaDna.mandibleSize = sliderControlList[25].percentOfBar;
+			umaDna.jawsSize = sliderControlList[26].percentOfBar;
+			umaDna.jawsPosition = sliderControlList[27].percentOfBar;
 			
-			umaDna.cheekSize = sliderControlList[28].actualValue;
-			umaDna.cheekPosition = sliderControlList[29].actualValue;
-			umaDna.lowCheekPronounced = sliderControlList[30].actualValue;
-			umaDna.lowCheekPosition = sliderControlList[31].actualValue;
+			umaDna.cheekSize = sliderControlList[28].percentOfBar;
+			umaDna.cheekPosition = sliderControlList[29].percentOfBar;
+			umaDna.lowCheekPronounced = sliderControlList[30].percentOfBar;
+			umaDna.lowCheekPosition = sliderControlList[31].percentOfBar;
 			
-			umaDna.foreheadSize = sliderControlList[32].actualValue;
-			umaDna.foreheadPosition = sliderControlList[33].actualValue;
+			umaDna.foreheadSize = sliderControlList[32].percentOfBar;
+			umaDna.foreheadPosition = sliderControlList[33].percentOfBar;
 			
-			umaDna.eyeSize = sliderControlList[44].actualValue;
-			umaDna.eyeRotation = sliderControlList[45].actualValue;
-			umaDna.lipsSize = sliderControlList[34].actualValue;
-			umaDna.mouthSize = sliderControlList[35].actualValue;
-			umaDna.breastSize = sliderControlList[36].actualValue;	
-			umaDna.gluteusSize = sliderControlList[37].actualValue;
+			umaDna.eyeSize = sliderControlList[44].percentOfBar;
+			umaDna.eyeRotation = sliderControlList[45].percentOfBar;
+			umaDna.lipsSize = sliderControlList[34].percentOfBar;
+			umaDna.mouthSize = sliderControlList[35].percentOfBar;
+			umaDna.breastSize = sliderControlList[36].percentOfBar;	
+			umaDna.gluteusSize = sliderControlList[37].percentOfBar;
 			
-			umaDna.armWidth = sliderControlList[38].actualValue;
-			umaDna.forearmLength = sliderControlList[39].actualValue;
-			umaDna.forearmWidth = sliderControlList[40].actualValue;
+			umaDna.armWidth = sliderControlList[38].percentOfBar;
+			umaDna.forearmLength = sliderControlList[39].percentOfBar;
+			umaDna.forearmWidth = sliderControlList[40].percentOfBar;
 			
-			umaDna.belly = sliderControlList[41].actualValue;
-			umaDna.waist = sliderControlList[42].actualValue;
+			umaDna.belly = sliderControlList[41].percentOfBar;
+			umaDna.waist = sliderControlList[42].percentOfBar;
 		}
 	}
 }

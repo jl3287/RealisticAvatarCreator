@@ -16,8 +16,12 @@ public class RACModifiableControl : MonoBehaviour
 	public string sliderName;
 
 	public Vector2 sliderPosition;
-
+	
 	public float defaultValue = 0.5f;
+	
+	public float minValue = 0.0f;
 
+	public float maxValue = 1.0f;
+	
 	public string modifiedBodyPart = "Global";
 }

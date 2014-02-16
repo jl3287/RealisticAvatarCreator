@@ -19,6 +19,8 @@ public class RACCustomization : UMACustomization
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
 			curControl.sliderControl = InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
 			curControl.sliderControl.actualValue = curControl.defaultValue;
+			curControl.sliderControl.minValue = curControl.minValue;
+			curControl.sliderControl.maxValue = curControl.maxValue;
 		}
 	}
 

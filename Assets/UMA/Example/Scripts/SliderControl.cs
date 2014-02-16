@@ -1,11 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class SliderControl : MonoBehaviour {
+public class SliderControl : MonoBehaviour 
+{
 	public bool pressed;
 
-	public float actualValue;
+	public float percentOfBar;
 	public Vector2 sliderOffset;
+
+	public float actualValue;
 	
 	public bool stepSlider;
 	public byte actualStepValue;
@@ -25,7 +28,8 @@ public class SliderControl : MonoBehaviour {
 	public float minValue = 0;
 	public float maxValue = 1;
 
-	void Start () {
+	void Start () 
+	{
 		descriptionTextOriginalPos = descriptionText.pixelOffset;
 		sliderBarOriginalPos.x = sliderBar.pixelInset.x;
 		sliderBarOriginalPos.y = sliderBar.pixelInset.y;
@@ -37,46 +41,55 @@ public class SliderControl : MonoBehaviour {
 		name = descriptionText.text;
 	}
 	
-	void Update () {
+	void Update () 
+	{
+		float spread = this.maxValue - this.minValue;
+		this.percentOfBar = (this.actualValue - this.minValue) / spread;
+
 		descriptionText.pixelOffset = descriptionTextOriginalPos + sliderOffset;
 		
 		sliderBar.pixelInset = new Rect(sliderBarOriginalPos.x + sliderOffset.x, sliderBarOriginalPos.y + sliderOffset.y, sliderBar.pixelInset.width, sliderBar.pixelInset.height);
 		
 		sliderBarCollision.pixelInset = new Rect(sliderBarCollisionOriginalPos.x + sliderOffset.x, sliderBarCollisionOriginalPos.y + sliderOffset.y, sliderBarCollision.pixelInset.width,sliderBarCollision.pixelInset.height);
 		
-		sliderMark.pixelInset = new Rect((sliderBarCollision.pixelInset.width * actualValue) + sliderOffset.x - sliderMark.pixelInset.width/2, sliderMarkOriginalPos.y + sliderOffset.y, sliderMark.pixelInset.width, sliderMark.pixelInset.height);
+		sliderMark.pixelInset = new Rect((sliderBarCollision.pixelInset.width * percentOfBar) + sliderOffset.x - sliderMark.pixelInset.width/2, sliderMarkOriginalPos.y + sliderOffset.y, sliderMark.pixelInset.width, sliderMark.pixelInset.height);
 		valueText.pixelOffset = new Vector2(sliderMark.pixelInset.x + 16,sliderMark.pixelInset.y + 18);
 			
-		if(Input.GetMouseButtonDown(0)){
-			if(sliderBarCollision.HitTest(Input.mousePosition)){
+		if(Input.GetMouseButtonDown(0))
+		{
+			if(sliderBarCollision.HitTest(Input.mousePosition))
+			{
 				pressed = true;
 			}
 		}
 		
-		
-		if(pressed){
-			actualValue = (Input.mousePosition.x - sliderBarCollision.pixelInset.x)/sliderBarCollision.pixelInset.width;
+		if(pressed)
+		{
+			percentOfBar = (Input.mousePosition.x - sliderBarCollision.pixelInset.x)/sliderBarCollision.pixelInset.width;
 			
-			if(actualValue > this.maxValue){
-				actualValue = this.maxValue;
-			}else if(actualValue < this.minValue){
-				actualValue = this.minValue;
+			if(percentOfBar > 1)
+				percentOfBar = 1;
+			else if(percentOfBar < 0)
+				percentOfBar = 0;
+			
+			if(stepSlider)
+			{
+				actualStepValue = (byte)Mathf.RoundToInt(percentOfBar * stepSize);
 			}
 			
-			if(stepSlider){
-				actualStepValue = (byte)Mathf.RoundToInt(actualValue * stepSize);
-			}
-			
-			if(Input.GetMouseButtonUp(0)){
+			if(Input.GetMouseButtonUp(0))
+			{
 				pressed = false;
 			}
 		}
-		
-		valueText.text = actualValue.ToString("F2");
+
+		//Set the text and actual value based on the percent
+		this.actualValue = this.percentOfBar*spread + this.minValue;
+		valueText.text = this.actualValue.ToString("F2");
 	}
 	
 	public void ForceUpdate(){
 		//for stepSlider first update
-		actualValue = (float)actualStepValue/stepSize;
+		percentOfBar = (float)actualStepValue/stepSize;
 	}
 }
