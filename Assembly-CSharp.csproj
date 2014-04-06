@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{6765C786-7C23-F4ED-D5DB-0D5145D474DB}</ProjectGuid>
+	<ProjectGuid>{94E51577-479A-1B36-2B3E-920A3ADCEEA4}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RACScripts\PopupList.cs" />
      <Compile Include="Assets\RACScripts\RACBodyType.cs" />
      <Compile Include="Assets\RACScripts\RACCrowd.cs" />
      <Compile Include="Assets\RACScripts\RACCustomization.cs" />
      <Compile Include="Assets\RACScripts\RACModifiableControl.cs" />
+     <Compile Include="Assets\RACScripts\RACPopupList.cs" />
+     <Compile Include="Assets\RACScripts\RACSaveDataButton.cs" />
      <Compile Include="Assets\UMA\Example\Scripts\CameraTrack.cs" />
      <Compile Include="Assets\UMA\Example\Scripts\HUDFPS.cs" />
      <Compile Include="Assets\UMA\Example\Scripts\Locomotion.cs" />
@@ -86,6 +89,7 @@
      <None Include="Assets\UMA\Editor\Templates\UmaDnaChild_GetNames_Fragment.cs.txt" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Debug_Normals.shader" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Human-Normal-Diffuse-Metallic.shader" />
+     <None Include="Assets\RACSliderOutputs\Sliders-2014-04-06-03-07-24.txt" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Human-Normal-Diffuse.shader" />
      <None Include="Assets\UMA\UMA_Project\Shaders\CombineTexture.shader" />
      <None Include="Assets\UMA\Editor\Templates\UmaDna_Template.cs.txt" />

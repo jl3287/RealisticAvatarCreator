@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{81558009-5E83-4E8F-0FB6-657DF5460E66}</ProjectGuid>
+	<ProjectGuid>{8472F3B6-5AE7-01D3-248F-D95F0A86E5DA}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -58,6 +58,7 @@
      <None Include="Assets\UMA\Editor\Templates\UmaDnaChild_GetNames_Fragment.cs.txt" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Debug_Normals.shader" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Human-Normal-Diffuse-Metallic.shader" />
+     <None Include="Assets\RACSliderOutputs\Sliders-2014-04-06-03-07-24.txt" />
      <None Include="Assets\UMA\UMA_Project\Shaders\UnLogickShaders\Human-Normal-Diffuse.shader" />
      <None Include="Assets\UMA\UMA_Project\Shaders\CombineTexture.shader" />
      <None Include="Assets\UMA\Editor\Templates\UmaDna_Template.cs.txt" />
@@ -108,7 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{6765C786-7C23-F4ED-D5DB-0D5145D474DB}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{94E51577-479A-1B36-2B3E-920A3ADCEEA4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
