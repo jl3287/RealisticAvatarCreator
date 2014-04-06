@@ -1451,8 +1451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonXPos: 725
   buttonYPos: 32
-  width: 20
-  height: 20
+  width: 200
+  height: 200
   text: text
 --- !u!4 &627450834
 Transform:

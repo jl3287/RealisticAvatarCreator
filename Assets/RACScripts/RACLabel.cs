@@ -15,6 +15,6 @@ public class RACLabel : MonoBehaviour
 	// Use this for initialization
 	private void OnGUI () 
 	{
-		GUI.Label(new Rect(buttonXPos, buttonYPos, 100, 20), this.text);
+		GUI.Label(new Rect(this.buttonXPos, this.buttonYPos, this.width, this.height), this.text);
 	}
 }
