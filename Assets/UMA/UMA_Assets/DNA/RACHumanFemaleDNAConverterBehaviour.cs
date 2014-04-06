@@ -36,13 +36,16 @@ public class RACHumanFemaleDNAConverterBehaviour : HumanFemaleDNAConverterBehavi
 				{
 					startingInformation = skeleton.GetPosition(skeletonStringToHash);
 
+					Vector3 scale = skeleton.GetScale(skeletonStringToHash);
+					
+
 					//Modify it
 					if (curControl.effectsX)
-						startingInformation.x += curControl.sliderControl.actualValue;
+						startingInformation.x += curControl.sliderControl.actualValue*(1/scale.x);
 					if (curControl.effectsY)
-						startingInformation.y += curControl.sliderControl.actualValue;
+						startingInformation.y += curControl.sliderControl.actualValue*(1/scale.y);
 					if (curControl.effectsZ)
-						startingInformation.z += curControl.sliderControl.actualValue;
+						startingInformation.z += curControl.sliderControl.actualValue*(1/scale.z);
 					
 					skeleton.SetPosition(skeletonStringToHash, startingInformation);
 				}
