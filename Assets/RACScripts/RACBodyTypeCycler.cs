@@ -12,11 +12,18 @@ public class RACBodyTypeCycler : MonoBehaviour
 	[SerializeField]
 	private RACCustomization racCustomization;
 
+	[SerializeField]
+	private RACLabel bodyTypeLabel;
+
 	// Use this for initialization
 	private void Start () 
 	{
 		RACBodyType[] bodyTypeArray = this.GetComponentsInChildren<RACBodyType>();
 		bodyTypeList = bodyTypeArray.ToList();
+
+		//Set the starting label
+		RACBodyType selectedType = this.bodyTypeList[this.bodyTypeIndex];
+		this.bodyTypeLabel.text = selectedType.name;
 	}
 	
 	// Update is called once per frame
@@ -25,8 +32,16 @@ public class RACBodyTypeCycler : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Tab))
 		{
 			this.bodyTypeIndex = (this.bodyTypeIndex + 1)%this.bodyTypeList.Count;
-			this.racCustomization.SetAllSliderValues(this.bodyTypeList[this.bodyTypeIndex].ControlList);
+			RACBodyType selectedType = this.bodyTypeList[this.bodyTypeIndex];
+			this.racCustomization.SetAllSliderValues(selectedType.ControlList);
+
+			this.bodyTypeLabel.text = selectedType.name;
 		}
+	}
+
+	public RACBodyType GetCurrentlySelectedBodyType()
+	{
+		return this.bodyTypeList[this.bodyTypeIndex];
 	}
 
 

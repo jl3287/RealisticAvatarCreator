@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racCustomization: {fileID: 1951823333}
+  bodyTypeLabel: {fileID: 627450833}
 --- !u!1 &111935734
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +598,7 @@ GameObject:
   - 4: {fileID: 229518940}
   - 114: {fileID: 229518941}
   m_Layer: 0
-  m_Name: FiftiethPercentile
+  m_Name: Fiftieth_Percentile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1421,6 +1422,49 @@ MonoBehaviour:
   maxValue: 1.10000002
   modifiedBodyParts:
   - RightArm
+--- !u!1 &627450832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 627450834}
+  - 114: {fileID: 627450833}
+  m_Layer: 0
+  m_Name: SelectedBodyTypeLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &627450833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627450832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946b953c7854505499983c06380827ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonXPos: 725
+  buttonYPos: 32
+  width: 20
+  height: 20
+  text: text
+--- !u!4 &627450834
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627450832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &661739765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1671,6 @@ MonoBehaviour:
   umaCrowdSize: {x: 2, y: 1}
   randomDna: 1
   zeroPoint: {fileID: 0}
-  bodyTypeOfCrowd: {fileID: 518168457}
 --- !u!1 &797273642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4572,7 +4615,7 @@ MonoBehaviour:
   effectsZ: 1
   sliderName: Neck
   sliderPosition: {x: 3, y: 0}
-  defaultValue: 1
+  defaultValue: 1.25
   minValue: .75
   maxValue: 1.25
   modifiedBodyParts:

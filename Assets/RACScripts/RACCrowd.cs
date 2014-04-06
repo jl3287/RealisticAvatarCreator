@@ -4,19 +4,22 @@ using System.Collections.Generic;
 
 public class RACCrowd : UMACrowd
 {
-	public RACBodyType bodyTypeOfCrowd;
-
 	private RACCustomization customization;
+
+	private RACBodyTypeCycler bodyTypeCycler;
 
 	private void Awake()
 	{		
 		this.customization = GameObject.FindObjectOfType(typeof(RACCustomization)) as RACCustomization;
+		this.bodyTypeCycler = GameObject.FindObjectOfType(typeof(RACBodyTypeCycler)) as RACBodyTypeCycler;
 	}
 
 	protected override UMACrowdRandomSet.CrowdRaceData SetGeneratedUMARace (UMA.UMAData.UMARecipe umaRecipe)
 	{
-		if (this.bodyTypeOfCrowd != null)
+		if (this.bodyTypeCycler != null)
 		{
+			RACBodyType bodyTypeOfCrowd = this.bodyTypeCycler.GetCurrentlySelectedBodyType();
+
 			if (bodyTypeOfCrowd.isFemale)
 				umaRecipe.SetRace(raceLibrary.GetRace("RACHumanFemale"));
 			else
