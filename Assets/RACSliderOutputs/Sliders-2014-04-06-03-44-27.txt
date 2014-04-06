@@ -1,0 +1,36 @@
+Slider Name	SliderValue	HoverTime
+Chest Depth	0.65	0.01656651
+Foot Breadth	1	0.0497005
+Head Breadth	1	0.04970002
+Buttock Depth	1	0.01656723
+L Hand Breadth	1	0.01656723
+L Leg Lth	1	0
+L Lower Leg Circ	1	0.04970133
+R Lower Leg Circ	1	0.01656628
+R Leg Lth	1	0.01656675
+R Hand Breadth	1	0.01656628
+R ForeArm Lth	1	0.01656651
+L ForeArm Lth	1	0
+L Lower Leg Lth	1	0.01656628
+R Upper Leg Lth	0.99	2.1868
+R Upper Leg Circ	1	0.04969978
+L Upper Leg Circ	1	0.06549847
+L Upper Leg Lth	1	0.04970098
+R Lower Leg Lth	1	0.04970074
+Upper Body Lth	1	0
+R Hand Lth	1	0.01656675
+L Hand Lth	1	0.01656699
+R Arm Lth	1	0.01656675
+Head Lth	1	0.03313351
+Height	0.99	0.01656675
+Chest Breadth	0.99	0.01656675
+L Arm Lth	1	0.01656628
+Neck	1	0.0662663
+Levitate	0	0.1008736
+L Shoulder Pos	0	0.01656651
+R Shoulder Pos	0	0.01656628
+Shoulder Size	1	0.01656699
+Foot Length	1	0.04969978
+Waist Breadth	1	0.05315971
+Hip Breadth	1	0.04970026
+Waist Depth	1	0.04969943

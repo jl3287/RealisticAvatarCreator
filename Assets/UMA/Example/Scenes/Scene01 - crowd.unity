@@ -1112,48 +1112,6 @@ Transform:
   - {fileID: 980103654}
   - {fileID: 1289554245}
   m_Father: {fileID: 0}
---- !u!1 &842480022
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 842480024}
-  - 114: {fileID: 842480023}
-  m_Layer: 0
-  m_Name: SaveDataButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &842480023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 842480022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5095105e6acf494ea84e68a506a0fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonXPos: 708
-  buttonYPos: 538
-  racCustomization: {fileID: 1951823333}
-  fileSaveName: Sliders
---- !u!4 &842480024
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 842480022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &872838358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,41 +3226,43 @@ MonoBehaviour:
   maxValue: 1.5
   modifiedBodyParts:
   - LowerBackBelly
---- !u!1 &1866064311
+--- !u!1 &1851152084
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1866064313}
-  - 114: {fileID: 1866064312}
+  - 4: {fileID: 1851152086}
+  - 114: {fileID: 1851152085}
   m_Layer: 0
-  m_Name: PopupList
+  m_Name: SaveDataButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1866064312
+--- !u!114 &1851152085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1866064311}
+  m_GameObject: {fileID: 1851152084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3e30c1289ea9b49afdace42186e320, type: 3}
+  m_Script: {fileID: 11500000, guid: 80ef19a8b24395649bd4f54f8b0868a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xPos: 447
-  yPos: 413
---- !u!4 &1866064313
+  buttonXPos: 757
+  buttonYPos: 550
+  racCustomization: {fileID: 1951823333}
+  fileSaveName: Sliders
+--- !u!4 &1851152086
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1866064311}
+  m_GameObject: {fileID: 1851152084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
   m_LocalScale: {x: 1, y: 1, z: 1}

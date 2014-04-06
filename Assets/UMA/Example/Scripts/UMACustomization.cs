@@ -126,7 +126,7 @@ public class UMACustomization : MonoBehaviour {
 	
 	public SliderControl InstantiateSlider(string name, float X, float Y, float minValue = 0.0f, float maxValue = 1.0f){
 		Transform TempSlider;
-		TempSlider = Instantiate(sliderPrefab,Vector3.zero, Quaternion.identity) as Transform;
+		TempSlider = Instantiate(sliderPrefab, Vector3.zero, Quaternion.identity) as Transform;
 		TempSlider.parent = transform;
 		TempSlider.gameObject.name = name;
 		SliderControl tempSlider = TempSlider.GetComponent("SliderControl") as SliderControl;

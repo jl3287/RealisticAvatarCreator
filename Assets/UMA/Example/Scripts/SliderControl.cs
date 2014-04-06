@@ -41,7 +41,7 @@ public class SliderControl : MonoBehaviour
 		name = descriptionText.text;
 	}
 	
-	void Update () 
+	protected virtual void Update () 
 	{
 		float spread = this.maxValue - this.minValue;
 		this.percentOfBar = (this.actualValue - this.minValue) / spread;

@@ -1,7 +1,7 @@
-Slider Name	SliderValue
-Chest Depth	0.65
-Foot Breadth	1
-Head Breadth	1
+Slider Name	SliderValue MouseTime
+Chest Depth	0.65	0
+Foot Breadth	1	0.1
+Head Breadth	1	
 Buttock Depth	1
 L Hand Breadth	1
 L Leg Lth	1
