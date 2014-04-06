@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class RACCustomization : UMACustomization 
 {
 	private List<RACModifiableControl> modifiableControlList = new List<RACModifiableControl>();
+	private Dictionary<string, RACModifiableControl> modifiableControlDict = new Dictionary<string, RACModifiableControl>();
 
 	public bool useOldSlider = false;
 
@@ -18,7 +19,7 @@ public class RACCustomization : UMACustomization
 
 		InstanciateNewSliders(this.modifiableControlList);
 	}
-
+	
 	public void InstanciateNewSliders(List<RACModifiableControl> newModifiableControlList)
 	{
 		//Destroy any old sliders
@@ -27,10 +28,11 @@ public class RACCustomization : UMACustomization
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
 			Destroy(curControl.sliderControl.gameObject);
 		}
-
+		
 		//Set our sliders to be new sliders
 		this.modifiableControlList = newModifiableControlList;
-
+		this.modifiableControlDict = new Dictionary<string, RACModifiableControl>();
+		
 		//Use new sliders
 		for (int iSliderIndex = 0; iSliderIndex < this.modifiableControlList.Count; ++iSliderIndex)		
 		{
@@ -39,7 +41,30 @@ public class RACCustomization : UMACustomization
 			curControl.sliderControl.actualValue = curControl.defaultValue;
 			curControl.sliderControl.minValue = curControl.minValue;
 			curControl.sliderControl.maxValue = curControl.maxValue;
+
+			this.modifiableControlDict.Add(curControl.sliderName, curControl);
 		}
+	}
+	
+	public void SetAllSliderValues(List<RACModifiableControl> bodyTypeDefaultValueControlList)
+	{
+		//Use new sliders
+		for (int iSliderIndex = 0; iSliderIndex < bodyTypeDefaultValueControlList.Count; ++iSliderIndex)		
+		{
+			RACModifiableControl newControlForValues = bodyTypeDefaultValueControlList[iSliderIndex];
+
+			if (this.modifiableControlDict.ContainsKey(newControlForValues.sliderName))
+			{
+				RACModifiableControl curControl = this.modifiableControlDict[newControlForValues.sliderName];
+				curControl.sliderControl.actualValue = newControlForValues.defaultValue;
+			}
+			else
+			{
+				Debug.LogError("We're switching to a body with a slider named '" + newControlForValues.sliderName + "', but don't have that slider on our current body type.");
+			}
+		}
+
+		UpdateUMAShape();
 	}
 
 	public override void TransferValues ()
