@@ -15,15 +15,12 @@ public class RACLabel : MonoBehaviour
 
 	public string text = "text";
 
-	public int fontSize = 1;
-	public Color fontColor = Color.white;
+	public GUIStyle guiStyle;
 
 	// Use this for initialization
 	private void OnGUI () 
 	{
-		GUIStyle newStyle = new GUIStyle();
-		newStyle.fontSize = this.fontSize;
-		newStyle.normal.textColor = this.fontColor;
+		GUIStyle newStyle = guiStyle;
 		GUI.Label(new Rect(this.buttonXPos*Screen.width, this.buttonYPos*Screen.height, this.width, this.height), this.text, newStyle);
 	}
 }

@@ -19,10 +19,12 @@ public class RACSaveDataButton : MonoBehaviour
 
 	public string fileSaveName = "Sliders";
 
+	public GUIStyle guiStyle;
+
 	// Use this for initialization
 	private void OnGUI () 
 	{
-		if(GUI.Button(new Rect(buttonXPos*Screen.width, buttonYPos*Screen.height, buttonWidth*Screen.width, buttonHeight*Screen.height), "Save Sliders")) 
+		if(GUI.Button(new Rect(buttonXPos*Screen.width, buttonYPos*Screen.height, buttonWidth*Screen.width, buttonHeight*Screen.height), "Save Sliders", this.guiStyle)) 
 		{
 			SaveSliders();
 		}
