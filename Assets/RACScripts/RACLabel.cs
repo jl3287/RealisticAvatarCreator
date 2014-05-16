@@ -4,17 +4,26 @@ using System.Collections.Generic;
 
 public class RACLabel : MonoBehaviour 
 {
-	public int buttonXPos = 0;
-	public int buttonYPos = 0;
+	[Range(0, 1)]
+	public float buttonXPos = 0;
+	
+	[Range(0, 1)]
+	public float buttonYPos = 0;
 
-	public int width = 20;
-	public int height = 20;
+	public int width = 200;
+	public int height = 200;
 
 	public string text = "text";
+
+	public int fontSize = 1;
+	public Color fontColor = Color.white;
 
 	// Use this for initialization
 	private void OnGUI () 
 	{
-		GUI.Label(new Rect(this.buttonXPos, this.buttonYPos, this.width, this.height), this.text);
+		GUIStyle newStyle = new GUIStyle();
+		newStyle.fontSize = this.fontSize;
+		newStyle.normal.textColor = this.fontColor;
+		GUI.Label(new Rect(this.buttonXPos*Screen.width, this.buttonYPos*Screen.height, this.width, this.height), this.text, newStyle);
 	}
 }

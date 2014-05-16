@@ -241,6 +241,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 879538282}
+--- !u!1 &63079815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 63079817}
+  - 114: {fileID: 63079816}
+  m_Layer: 0
+  m_Name: SelectedBodyTypeLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &63079816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63079815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946b953c7854505499983c06380827ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonXPos: .630999982
+  buttonYPos: .0469999984
+  width: 200
+  height: 200
+  text: First_Percentile
+  fontSize: 32
+--- !u!4 &63079817
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 63079815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &101750428
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   racCustomization: {fileID: 1951823333}
-  bodyTypeLabel: {fileID: 627450833}
+  bodyTypeLabel: {fileID: 0}
 --- !u!1 &111935734
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +859,7 @@ MonoBehaviour:
   sliderPosition: {x: 0, y: 5}
   defaultValue: 1
   minValue: .899999976
-  maxValue: 1.10000002
+  maxValue: 10
   modifiedBodyParts:
   - RightUpLeg
 --- !u!1 &423044636
@@ -1216,6 +1260,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFemale: 1
+--- !u!1 &518860650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 518860652}
+  - 114: {fileID: 518860651}
+  m_Layer: 0
+  m_Name: SaveDataButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &518860651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518860650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ef19a8b24395649bd4f54f8b0868a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonXPos: .850000024
+  buttonYPos: .899999976
+  buttonWidth: .100000001
+  buttonHeight: .0500000007
+  racCustomization: {fileID: 1951823333}
+  fileSaveName: Sliders
+--- !u!4 &518860652
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 518860650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &561345792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,49 +1510,6 @@ MonoBehaviour:
   maxValue: 1.10000002
   modifiedBodyParts:
   - RightArm
---- !u!1 &627450832
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 627450834}
-  - 114: {fileID: 627450833}
-  m_Layer: 0
-  m_Name: SelectedBodyTypeLabel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &627450833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627450832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 946b953c7854505499983c06380827ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonXPos: 725
-  buttonYPos: 32
-  width: 200
-  height: 200
-  text: text
---- !u!4 &627450834
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 627450832}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &661739765
 GameObject:
   m_ObjectHideFlags: 0
@@ -3279,7 +3324,7 @@ MonoBehaviour:
   sliderPosition: {x: 2, y: 5}
   defaultValue: 1
   minValue: .899999976
-  maxValue: 1.10000002
+  maxValue: 10
   modifiedBodyParts:
   - LeftUpLeg
 --- !u!1 &1453589691
@@ -4374,7 +4419,7 @@ MonoBehaviour:
   sliderPosition: {x: 0, y: 5}
   defaultValue: 1
   minValue: .899999976
-  maxValue: 1.10000002
+  maxValue: 10
   modifiedBodyParts:
   - RightUpLeg
 --- !u!1 &1740033318
@@ -4527,48 +4572,6 @@ MonoBehaviour:
   maxValue: 1.5
   modifiedBodyParts:
   - LowerBackBelly
---- !u!1 &1851152084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1851152086}
-  - 114: {fileID: 1851152085}
-  m_Layer: 0
-  m_Name: SaveDataButton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1851152085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1851152084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80ef19a8b24395649bd4f54f8b0868a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonXPos: 757
-  buttonYPos: 550
-  racCustomization: {fileID: 1951823333}
-  fileSaveName: Sliders
---- !u!4 &1851152086
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1851152084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .29692781, y: 2.56470728, z: 2.08587241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1868041040
 GameObject:
   m_ObjectHideFlags: 0

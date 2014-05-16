@@ -4,8 +4,16 @@ using System.Collections.Generic;
 
 public class RACSaveDataButton : MonoBehaviour 
 {
-	public int buttonXPos = 0;
-	public int buttonYPos = 0;
+	//Numbers in percent of screen space
+	[Range(0, 1)]
+	public float buttonXPos = 0;
+	[Range(0, 1)]
+	public float buttonYPos = 0;
+	
+	[Range(0, 1)]
+	public float buttonWidth = 0.1f;
+	[Range(0, 1)]
+	public float buttonHeight = 0.01f;
 
 	public RACCustomization racCustomization;
 
@@ -14,7 +22,7 @@ public class RACSaveDataButton : MonoBehaviour
 	// Use this for initialization
 	private void OnGUI () 
 	{
-		if(GUI.Button(new Rect(buttonXPos, buttonYPos, 100, 20), "Save Sliders")) 
+		if(GUI.Button(new Rect(buttonXPos*Screen.width, buttonYPos*Screen.height, buttonWidth*Screen.width, buttonHeight*Screen.height), "Save Sliders")) 
 		{
 			SaveSliders();
 		}
