@@ -23,7 +23,7 @@ public class RACBodyTypeCycler : MonoBehaviour
 
 		//Set the starting label
 		RACBodyType selectedType = this.bodyTypeList[this.bodyTypeIndex];
-		this.bodyTypeLabel.text = selectedType.name;
+		this.bodyTypeLabel.UpdateLabel(selectedType.name);
 	}
 	
 	// Update is called once per frame
@@ -35,7 +35,7 @@ public class RACBodyTypeCycler : MonoBehaviour
 			RACBodyType selectedType = this.bodyTypeList[this.bodyTypeIndex];
 			this.racCustomization.SetAllSliderValues(selectedType.ControlList);
 
-			this.bodyTypeLabel.text = selectedType.name;
+			this.bodyTypeLabel.UpdateLabel(selectedType.name);
 		}
 	}
 
