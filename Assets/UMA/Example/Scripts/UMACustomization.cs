@@ -83,16 +83,25 @@ public class UMACustomization : MonoBehaviour {
 	}
 	
 
-	protected virtual void Update () {
+	protected virtual void Update () 
+	{
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		
-		if(Input.GetMouseButtonDown(1))
+		if(Input.GetMouseButtonDown(1) || umaData == null)
 		{
 			if (Physics.Raycast(ray, out hit, 100) && hit.collider && hit.collider.transform && hit.collider.transform.parent && hit.collider.transform.parent.parent)
 			{
 				umaData = hit.collider.transform.parent.parent.GetComponent<UMAData>();
 				if(umaData)
+				{
+					AvatarSetup();
+				}
+			}
+			else
+			{
+				umaData = GameObject.FindObjectOfType(typeof(UMAData)) as UMAData;
+				if (umaData)
 				{
 					AvatarSetup();
 				}
