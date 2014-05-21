@@ -18,6 +18,9 @@ public class UMACustomization : MonoBehaviour {
 
 	public bool editing = false;
 	
+	public Vector2 sliderGridSize = new Vector2(200, 60);
+	public Vector2 sliderGridOffset = new Vector2(20, -20);
+	
 	protected virtual void Start () 
 	{
 		sliderControlList = new SliderControl[46];	
@@ -143,8 +146,8 @@ public class UMACustomization : MonoBehaviour {
 		tempSlider.maxValue = maxValue;
 		tempSlider.percentOfBar = 0.5f;
 		tempSlider.descriptionText.text = name;
-		tempSlider.sliderOffset.x = 20 + X*100;
-		tempSlider.sliderOffset.y = -20 - Y*60;
+		tempSlider.sliderOffset.x = this.sliderGridOffset.x + X*this.sliderGridSize.x;
+		tempSlider.sliderOffset.y = this.sliderGridOffset.y - Y*this.sliderGridSize.y;
 		return tempSlider;
 	}
 	

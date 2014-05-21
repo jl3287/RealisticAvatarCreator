@@ -125,8 +125,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .00999999978, y: 1.00999999, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400006}
 --- !u!4 &400006
@@ -136,7 +136,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .248685718, y: -.354166985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -196,6 +196,7 @@ MonoBehaviour:
   sliderMarkOriginalPos: {x: 0, y: 0}
   minValue: 0
   maxValue: 1
+  minmumRecordedTime: .100000001
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
@@ -203,14 +204,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
-  m_Texture: {fileID: 0}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_Texture: {fileID: 2800000, guid: 3975bed72adca224a923e99048d684de, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: 0}
   m_PixelInset:
     serializedVersion: 2
-    x: 0
+    x: 9.21000004
     y: -40
-    width: 80
-    height: 20
+    width: 124.400002
+    height: 40
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -226,8 +227,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 60
-    y: -48
+    x: 7.5999999
+    y: -36.5999985
     width: 32
     height: 32
   m_LeftBorder: 0
@@ -247,8 +248,8 @@ GUITexture:
     serializedVersion: 2
     x: -8
     y: -40
-    width: 100
-    height: 20
+    width: 160
+    height: 40
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -264,7 +265,7 @@ GUIText:
   m_Text: 1.0
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 76, y: -30}
+  m_PixelOffset: {x: 22.8999996, y: -21.1000004}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 35ca234494ae4b847b4089f09709c5c6, type: 3}
@@ -292,7 +293,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 35ca234494ae4b847b4089f09709c5c6, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 20
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2

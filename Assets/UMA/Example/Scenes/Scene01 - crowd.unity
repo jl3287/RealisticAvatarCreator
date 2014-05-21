@@ -5037,6 +5037,8 @@ MonoBehaviour:
   mySlotLibrary: {fileID: 0}
   myOverlayLibrary: {fileID: 0}
   editing: 0
+  sliderGridSize: {x: 200, y: 60}
+  sliderGridOffset: {x: 20, y: -20}
   useOldSlider: 0
 --- !u!1 &1970701732
 GameObject:

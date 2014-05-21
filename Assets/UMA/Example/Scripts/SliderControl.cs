@@ -52,7 +52,13 @@ public class SliderControl : MonoBehaviour
 		
 		sliderBarCollision.pixelInset = new Rect(sliderBarCollisionOriginalPos.x + sliderOffset.x, sliderBarCollisionOriginalPos.y + sliderOffset.y, sliderBarCollision.pixelInset.width,sliderBarCollision.pixelInset.height);
 		
-		sliderMark.pixelInset = new Rect((sliderBarCollision.pixelInset.width * percentOfBar) + sliderOffset.x - sliderMark.pixelInset.width/2, sliderMarkOriginalPos.y + sliderOffset.y, sliderMark.pixelInset.width, sliderMark.pixelInset.height);
+		sliderMark.pixelInset = 
+			new Rect(
+				sliderMarkOriginalPos.x + (sliderBarCollision.pixelInset.width * percentOfBar) + sliderOffset.x - sliderMark.pixelInset.width/2,
+				sliderMarkOriginalPos.y + sliderOffset.y, 
+				sliderMark.pixelInset.width, 
+				sliderMark.pixelInset.height);
+
 		valueText.pixelOffset = new Vector2(sliderMark.pixelInset.x + 16,sliderMark.pixelInset.y + 18);
 			
 		if(Input.GetMouseButtonDown(0))
