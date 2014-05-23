@@ -57,6 +57,8 @@ public class RACCustomization : UMACustomization
 			{
 				RACModifiableControl curControl = this.modifiableControlDict[newControlForValues.sliderName];
 				curControl.sliderControl.actualValue = newControlForValues.defaultValue;
+				curControl.sliderControl.minValue = newControlForValues.minValue;
+				curControl.sliderControl.maxValue = newControlForValues.maxValue;
 			}
 			else
 			{
