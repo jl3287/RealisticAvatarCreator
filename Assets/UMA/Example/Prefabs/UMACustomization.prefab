@@ -46,8 +46,6 @@ MonoBehaviour:
   mySlotLibrary: {fileID: 0}
   myOverlayLibrary: {fileID: 0}
   editing: 0
-  sliderGridSize: {x: 300, y: 80}
-  sliderGridOffset: {x: 20, y: -20}
   useOldSlider: 0
 --- !u!1001 &100100000
 Prefab:

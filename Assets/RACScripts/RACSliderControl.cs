@@ -18,20 +18,6 @@ public class RACSliderControl : SliderControl
 	/// </summary>
 	[SerializeField]
 	private float minmumRecordedTime = 0.1f;
-		
-	private RACWarningEffect warningEffect;
-
-	[SerializeField]
-	private float minWarningRange = 0.1f;
-	[SerializeField]
-	private float maxWarningRange = 0.9f;
-
-	protected override void Start ()
-	{
-		base.Start ();
-					
-		this.warningEffect = GameObject.FindObjectOfType(typeof(RACWarningEffect)) as RACWarningEffect;
-	}
 
 	protected override void Update ()
 	{
@@ -58,11 +44,6 @@ public class RACSliderControl : SliderControl
 			}
 
 			this.lastMouseOverTime = 0.0f;
-		}
-
-		if (this.warningEffect != null && (this.percentOfBar < this.minWarningRange || this.percentOfBar > this.maxWarningRange))
-		{
-			this.warningEffect.PlayWarningEffect();
 		}
 	}
 }

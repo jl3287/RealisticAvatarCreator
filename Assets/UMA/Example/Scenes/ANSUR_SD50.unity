@@ -164,7 +164,7 @@ MonoBehaviour:
   sliderName: L Upper Leg Lth
   sliderPosition: {x: 2, y: 6}
   defaultValue: .870000005
-  minValue: .75
+  minValue: .74000001
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
@@ -505,7 +505,7 @@ MonoBehaviour:
   sliderName: Foot Breadth
   sliderPosition: {x: 1, y: 8}
   defaultValue: .889999986
-  minValue: .790000021
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - LeftFoot
@@ -608,7 +608,7 @@ MonoBehaviour:
   sliderName: R Upper Leg Circ
   sliderPosition: {x: 1, y: 6}
   defaultValue: .819999993
-  minValue: .680000007
+  minValue: .639999986
   maxValue: 1
   modifiedBodyParts:
   - RightUpLegAdjust
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   sliderName: Chest Depth
   sliderPosition: {x: 1, y: 2}
   defaultValue: .800000012
-  minValue: .649999976
+  minValue: .600000024
   maxValue: 1
   modifiedBodyParts:
   - Spine1Adjust
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   sliderName: R Leg Lth
   sliderPosition: {x: 0, y: 5}
   defaultValue: .879999995
-  minValue: .790000021
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
@@ -1339,7 +1339,7 @@ MonoBehaviour:
   sliderName: R Hand Breadth
   sliderPosition: {x: 1, y: 4}
   defaultValue: .889999986
-  minValue: .800000012
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - RightHand
@@ -1490,7 +1490,7 @@ MonoBehaviour:
   sliderName: Head Breadth
   sliderPosition: {x: 1, y: 0}
   defaultValue: .920000017
-  minValue: .860000014
+  minValue: .839999974
   maxValue: 1
   modifiedBodyParts:
   - Head
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   sliderName: R Lower Leg Circ
   sliderPosition: {x: 1, y: 7}
   defaultValue: .860000014
-  minValue: .730000019
+  minValue: .720000029
   maxValue: 1
   modifiedBodyParts:
   - RightLegAdjust
@@ -1828,7 +1828,7 @@ MonoBehaviour:
     m_RichText: 1
     m_TextClipping: 0
     m_ImagePosition: 0
-    m_ContentOffset: {x: 70, y: 22.2000008}
+    m_ContentOffset: {x: 75, y: 27.5}
     m_FixedWidth: 0
     m_FixedHeight: 0
     m_StretchWidth: 1
@@ -1946,7 +1946,7 @@ MonoBehaviour:
   sliderName: R Upper Leg Lth
   sliderPosition: {x: 0, y: 6}
   defaultValue: .870000005
-  minValue: .75
+  minValue: .74000001
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   sliderName: Waist Breadth
   sliderPosition: {x: 3, y: 2}
   defaultValue: .779999971
-  minValue: .639999986
+  minValue: .560000002
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
@@ -2147,7 +2147,7 @@ MonoBehaviour:
   sliderName: R Arm Lth
   sliderPosition: {x: 0, y: 3}
   defaultValue: .879999995
-  minValue: .800000012
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - RightArm
@@ -2302,7 +2302,7 @@ MonoBehaviour:
   sliderName: L Leg Lth
   sliderPosition: {x: 2, y: 5}
   defaultValue: .879999995
-  minValue: .790000021
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
@@ -2634,7 +2634,7 @@ MonoBehaviour:
   sliderName: Buttock Depth
   sliderPosition: {x: 4, y: 1}
   defaultValue: .769999981
-  minValue: .629999995
+  minValue: .540000021
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
@@ -2874,7 +2874,7 @@ MonoBehaviour:
   sliderName: R ForeArm Lth
   sliderPosition: {x: 1, y: 3}
   defaultValue: .889999986
-  minValue: .810000002
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - RightForeArm
@@ -2924,7 +2924,7 @@ MonoBehaviour:
   sliderName: R Lower Leg Lth
   sliderPosition: {x: 0, y: 7}
   defaultValue: .879999995
-  minValue: .779999971
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - RightLeg
@@ -3932,7 +3932,7 @@ MonoBehaviour:
   sliderName: Foot Length
   sliderPosition: {x: 0, y: 8}
   defaultValue: .889999986
-  minValue: .790000021
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - LeftFoot
@@ -4033,7 +4033,7 @@ MonoBehaviour:
   effectsY: 1
   effectsZ: 1
   sliderName: Height
-  sliderPosition: {x: 0, y: 0}
+  sliderPosition: {x: 6, y: 13}
   defaultValue: .839999974
   minValue: .839999974
   maxValue: 1
@@ -4186,7 +4186,7 @@ MonoBehaviour:
   sliderName: L Arm Lth
   sliderPosition: {x: 2, y: 3}
   defaultValue: .879999995
-  minValue: .800000012
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - LeftArm
@@ -4236,7 +4236,7 @@ MonoBehaviour:
   sliderName: Waist Depth
   sliderPosition: {x: 4, y: 2}
   defaultValue: .720000029
-  minValue: .569999993
+  minValue: .439999998
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
@@ -4286,7 +4286,7 @@ MonoBehaviour:
   sliderName: L Lower Leg Circ
   sliderPosition: {x: 3, y: 7}
   defaultValue: .860000014
-  minValue: .730000019
+  minValue: .720000029
   maxValue: 1
   modifiedBodyParts:
   - LeftLegAdjust
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   effectsY: 1
   effectsZ: 1
   sliderName: Height
-  sliderPosition: {x: 0, y: 0}
+  sliderPosition: {x: 6, y: 13}
   defaultValue: 1
   minValue: .839999974
   maxValue: 1
@@ -4657,7 +4657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!132 &1453589692
 GUIText:
   m_ObjectHideFlags: 0
@@ -5379,7 +5379,7 @@ MonoBehaviour:
   sliderName: L ForeArm Lth
   sliderPosition: {x: 3, y: 3}
   defaultValue: .889999986
-  minValue: .810000002
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - LeftForeArm
@@ -5429,7 +5429,7 @@ MonoBehaviour:
   sliderName: L Hand Breadth
   sliderPosition: {x: 3, y: 4}
   defaultValue: .889999986
-  minValue: .800000012
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
@@ -5578,9 +5578,9 @@ MonoBehaviour:
   effectsY: 1
   effectsZ: 1
   sliderName: Height
-  sliderPosition: {x: 0, y: 0}
+  sliderPosition: {x: 6, y: 13}
   defaultValue: .910000026
-  minValue: .839999974
+  minValue: .819999993
   maxValue: 1
   modifiedBodyParts:
   - Global
@@ -5731,7 +5731,7 @@ MonoBehaviour:
   sliderName: L Hand Lth
   sliderPosition: {x: 2, y: 4}
   defaultValue: .889999986
-  minValue: .790000021
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
@@ -5933,7 +5933,7 @@ MonoBehaviour:
   sliderName: L Lower Leg Lth
   sliderPosition: {x: 2, y: 7}
   defaultValue: .879999995
-  minValue: .779999971
+  minValue: .75999999
   maxValue: 1
   modifiedBodyParts:
   - LeftLeg
@@ -6039,7 +6039,7 @@ MonoBehaviour:
   sliderName: L Upper Leg Circ
   sliderPosition: {x: 3, y: 6}
   defaultValue: .819999993
-  minValue: .819999993
+  minValue: .639999986
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLegAdjust
@@ -6239,7 +6239,7 @@ MonoBehaviour:
   sliderName: Hip Breadth
   sliderPosition: {x: 3, y: 1}
   defaultValue: .860000014
-  minValue: .730000019
+  minValue: .720000029
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
@@ -6545,7 +6545,7 @@ MonoBehaviour:
   sliderName: Neck
   sliderPosition: {x: 3, y: 0}
   defaultValue: .910000026
-  minValue: .810000002
+  minValue: .819999993
   maxValue: 1
   modifiedBodyParts:
   - NeckAdjust
@@ -6879,7 +6879,7 @@ MonoBehaviour:
   sliderName: Upper Body Lth
   sliderPosition: {x: 2, y: 2}
   defaultValue: .870000005
-  minValue: .75999999
+  minValue: .74000001
   maxValue: 1
   modifiedBodyParts:
   - LowerBack
@@ -7361,7 +7361,7 @@ MonoBehaviour:
   sliderName: R Hand Lth
   sliderPosition: {x: 0, y: 4}
   defaultValue: .889999986
-  minValue: .790000021
+  minValue: .779999971
   maxValue: 1
   modifiedBodyParts:
   - RightHand
@@ -7412,7 +7412,7 @@ MonoBehaviour:
   sliderName: Chest Breadth
   sliderPosition: {x: 0, y: 2}
   defaultValue: .850000024
-  minValue: .730000019
+  minValue: .699999988
   maxValue: 1
   modifiedBodyParts:
   - Spine1Adjust

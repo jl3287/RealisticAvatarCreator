@@ -208,10 +208,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: 0}
   m_PixelInset:
     serializedVersion: 2
-    x: -1.55999994
-    y: -133.199997
-    width: 598.200012
-    height: 164.199997
+    x: 9.21000004
+    y: -40
+    width: 124.400002
+    height: 40
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -227,10 +227,10 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -1.79999995
-    y: -48.7000008
-    width: 5.5
-    height: 65.6399994
+    x: 7.5999999
+    y: -36.5999985
+    width: 32
+    height: 32
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -242,14 +242,14 @@ GUITexture:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: fd2a1021d2809264eb3222be8ebfd830, type: 3}
+  m_Texture: {fileID: 2800000, guid: 81d34de2564eb4edabe25469cc6ed23e, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: -33.5
-    y: -270.399994
-    width: 632.099976
-    height: 346.5
+    x: -8
+    y: -40
+    width: 160
+    height: 40
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -265,7 +265,7 @@ GUIText:
   m_Text: 1.0
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 40.3400002, y: -34.0999985}
+  m_PixelOffset: {x: 22.8999996, y: -21.1000004}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 35ca234494ae4b847b4089f09709c5c6, type: 3}

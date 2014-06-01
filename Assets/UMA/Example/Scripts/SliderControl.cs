@@ -28,7 +28,7 @@ public class SliderControl : MonoBehaviour
 	public float minValue = 0;
 	public float maxValue = 1;
 
-	protected virtual void Start () 
+	void Start () 
 	{
 		descriptionTextOriginalPos = descriptionText.pixelOffset;
 		sliderBarOriginalPos.x = sliderBar.pixelInset.x;
