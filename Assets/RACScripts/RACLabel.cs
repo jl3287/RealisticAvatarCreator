@@ -21,6 +21,9 @@ public class RACLabel : MonoBehaviour
 	[Range(0, 1)]
 	public float textAlphaColor = 1.0f;
 
+	[SerializeField]
+	private bool fadeAfterUpdate = true; 
+
 	// Use this for initialization
 	private void OnGUI () 
 	{
@@ -34,6 +37,9 @@ public class RACLabel : MonoBehaviour
 	public void UpdateLabel(string newText)
 	{
 		this.text = newText;
-		this.animation.Play();
+		if (this.fadeAfterUpdate)
+		{
+			this.animation.Play();
+		}
 	}
 }
