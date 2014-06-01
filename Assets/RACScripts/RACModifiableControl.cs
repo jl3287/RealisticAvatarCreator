@@ -24,4 +24,14 @@ public class RACModifiableControl : MonoBehaviour
 	public float maxValue = 1.0f;
 	
 	public string[] modifiedBodyParts = {"Global"};
+
+	public float GetDeviation()
+	{
+		float startingValue = this.defaultValue;
+		float leftValue = sliderControl.minValue;
+		float rightValue = sliderControl.maxValue;
+		float currentValue = sliderControl.actualValue;
+		
+		return Mathf.Abs(startingValue - currentValue)/Mathf.Abs(leftValue - rightValue);
+	}
 }

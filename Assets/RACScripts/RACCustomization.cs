@@ -41,6 +41,7 @@ public class RACCustomization : UMACustomization
 			curControl.sliderControl.actualValue = curControl.defaultValue;
 			curControl.sliderControl.minValue = curControl.minValue;
 			curControl.sliderControl.maxValue = curControl.maxValue;
+			curControl.defaultValue = curControl.defaultValue;
 
 			this.modifiableControlDict.Add(curControl.sliderName, curControl);
 		}
@@ -59,6 +60,7 @@ public class RACCustomization : UMACustomization
 				curControl.sliderControl.actualValue = newControlForValues.defaultValue;
 				curControl.sliderControl.minValue = newControlForValues.minValue;
 				curControl.sliderControl.maxValue = newControlForValues.maxValue;
+				curControl.defaultValue = newControlForValues.defaultValue;
 			}
 			else
 			{

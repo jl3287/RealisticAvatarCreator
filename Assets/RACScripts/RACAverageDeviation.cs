@@ -19,13 +19,13 @@ public class RACAverageDeviation : MonoBehaviour
 	void Update () 
 	{
 		List<RACModifiableControl> controlList = this.racCustomization.ControlList;
-		float totalBarPercent = 0;
+		float totalDeviation = 0;
 		for (int iControlIndex = 0; iControlIndex < controlList.Count; ++iControlIndex)
 		{
-			totalBarPercent += controlList[iControlIndex].sliderControl.percentOfBar;
+			totalDeviation += controlList[iControlIndex].GetDeviation();
 		}
-		totalBarPercent /= controlList.Count;
+		totalDeviation /= controlList.Count;
 
-		label.text = totalBarPercent.ToString();
+		label.text = totalDeviation.ToString();
 	}
 }

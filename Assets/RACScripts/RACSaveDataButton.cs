@@ -34,7 +34,7 @@ public class RACSaveDataButton : MonoBehaviour
 	{
 		List<RACModifiableControl> allControls = racCustomization.ControlList;
 
-		string fileOutputString = "Slider Name\t" + "SliderValue\t" + "HoverTime\n";
+		string fileOutputString = "Slider Name\t" + "SliderValue\t" + "HoverTime\t" + "Deviation\n";
 		for (int iSliderIndex = 0; iSliderIndex < allControls.Count; ++iSliderIndex)		
 		{
 			RACModifiableControl control = allControls[iSliderIndex];
@@ -44,8 +44,9 @@ public class RACSaveDataButton : MonoBehaviour
 			string sliderName = control.sliderName;
 			string sliderValue = sliderControlAsRAC.actualValue.ToString();
 			string sliderMouseOverTime = sliderControlAsRAC.MousedOverTime.ToString();
+			string deviation = control.GetDeviation().ToString();
 
-			fileOutputString += sliderName + "\t" + sliderValue + "\t" + sliderMouseOverTime + "\n";
+			fileOutputString += sliderName + "\t" + sliderValue + "\t" + sliderMouseOverTime + "\t" + deviation + "\n";
 		}
 
 		string date = System.DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss");
