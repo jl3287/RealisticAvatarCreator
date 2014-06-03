@@ -123,10 +123,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .861893535, y: -1.13641405, z: 0}
+  m_LocalPosition: {x: .861893535, y: 1.27489054, z: 8.56250182e-09}
   m_LocalScale: {x: .365704715, y: .365704715, z: .365704715}
   m_Children: []
   m_Father: {fileID: 400002}
+  m_RootOrder: 0
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -134,11 +135,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.04260719, y: .969416261, z: 1.09018087}
-  m_LocalScale: {x: 1.20140445, y: 1, z: 1.50089252}
+  m_LocalPosition: {x: -1.03546715, y: -.85117054, z: 1.0381701}
+  m_LocalScale: {x: 1.20140445, y: .65723002, z: 1.50089252}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 400010}
+  m_RootOrder: 0
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -150,6 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
+  m_RootOrder: 0
 --- !u!4 &400006
 Transform:
   m_ObjectHideFlags: 1
@@ -161,6 +164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
+  m_RootOrder: 2
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -172,6 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
+  m_RootOrder: 1
 --- !u!4 &400010
 Transform:
   m_ObjectHideFlags: 1
@@ -184,6 +189,7 @@ Transform:
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 400012}
+  m_RootOrder: 3
 --- !u!4 &400012
 Transform:
   m_ObjectHideFlags: 1
@@ -196,9 +202,10 @@ Transform:
   m_Children:
   - {fileID: 400004}
   - {fileID: 400008}
-  - {fileID: 400010}
   - {fileID: 400006}
+  - {fileID: 400010}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!20 &2000000
 Camera:
   m_ObjectHideFlags: 1
@@ -211,10 +218,10 @@ Camera:
   m_BackGroundColor: {r: .604477644, g: .758291841, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: -.140000001
-    y: .0299999993
-    width: .330000013
-    height: .209999993
+    x: .829999983
+    y: -.0900000036
+    width: .150000006
+    height: .349999994
   near clip plane: .300000012
   far clip plane: 100
   field of view: 60
@@ -226,8 +233,11 @@ Camera:
     m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!20 &2000002
 Camera:
   m_ObjectHideFlags: 1
@@ -240,10 +250,10 @@ Camera:
   m_BackGroundColor: {r: .604477644, g: .758291841, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: .219999999
-    y: .0399999991
-    width: .209999993
-    height: .270000011
+    x: .829999983
+    y: .709999979
+    width: .150000006
+    height: .349999994
   near clip plane: .300000012
   far clip plane: 100
   field of view: 60
@@ -255,8 +265,11 @@ Camera:
     m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!20 &2000004
 Camera:
   m_ObjectHideFlags: 1
@@ -269,10 +282,10 @@ Camera:
   m_BackGroundColor: {r: .604477644, g: .758291841, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: .5
-    y: -.239999995
-    width: .25
-    height: .479999989
+    x: .829999983
+    y: .310000002
+    width: .150000006
+    height: .349999994
   near clip plane: .300000012
   far clip plane: 100
   field of view: 60
@@ -284,8 +297,11 @@ Camera:
     m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!20 &2000006
 Camera:
   m_ObjectHideFlags: 1
@@ -295,7 +311,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .604477644, g: .758291841, b: 1, a: .0196078438}
+  m_BackGroundColor: {r: .604477644, g: .758291841, b: 1, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -313,8 +329,11 @@ Camera:
     m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!81 &8100000
 AudioListener:
   m_ObjectHideFlags: 1
@@ -392,9 +411,8 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: adbe803b9f876074e850e0240a72358e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
 --- !u!1001 &100100000
