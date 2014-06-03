@@ -16,9 +16,12 @@ public class RACModifiableControl : MonoBehaviour
 	public string sliderName = "Slider Name";
 
 	public Vector2 sliderPosition;
-	
-	public float defaultValue = 0.5f;
-	
+
+	[SerializeField]
+	private float defaultValue = 0.5f;
+	public float DefaultValue {get{return this.defaultValue;} private set{this.defaultValue = value;}}
+	public float StartingValue {get; set;}
+
 	public float minValue = 0.0f;
 
 	public float maxValue = 1.0f;
@@ -27,7 +30,7 @@ public class RACModifiableControl : MonoBehaviour
 
 	public float GetDeviation()
 	{
-		float startingValue = this.defaultValue;
+		float startingValue = this.StartingValue;
 		float leftValue = sliderControl.minValue;
 		float rightValue = sliderControl.maxValue;
 		float currentValue = sliderControl.actualValue;

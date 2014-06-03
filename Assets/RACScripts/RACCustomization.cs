@@ -38,10 +38,10 @@ public class RACCustomization : UMACustomization
 		{
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
 			curControl.sliderControl = InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
-			curControl.sliderControl.actualValue = curControl.defaultValue;
+			curControl.sliderControl.actualValue = curControl.DefaultValue;
 			curControl.sliderControl.minValue = curControl.minValue;
 			curControl.sliderControl.maxValue = curControl.maxValue;
-			curControl.defaultValue = curControl.defaultValue;
+			curControl.StartingValue = curControl.DefaultValue;
 
 			this.modifiableControlDict.Add(curControl.sliderName, curControl);
 		}
@@ -57,10 +57,10 @@ public class RACCustomization : UMACustomization
 			if (this.modifiableControlDict.ContainsKey(newControlForValues.sliderName))
 			{
 				RACModifiableControl curControl = this.modifiableControlDict[newControlForValues.sliderName];
-				curControl.sliderControl.actualValue = newControlForValues.defaultValue;
+				curControl.sliderControl.actualValue = newControlForValues.DefaultValue;
 				curControl.sliderControl.minValue = newControlForValues.minValue;
 				curControl.sliderControl.maxValue = newControlForValues.maxValue;
-				curControl.defaultValue = newControlForValues.defaultValue;
+				curControl.StartingValue = newControlForValues.DefaultValue;
 			}
 			else
 			{
