@@ -169,6 +169,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &46065657
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +461,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &126355425
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +516,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &126632042
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +569,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &137049177
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +622,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBack
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &148018298
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +675,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &156676519
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +728,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &164221072
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +781,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &183676276
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +835,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Spine1Adjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &227751020
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +888,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &229518939
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1017,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &261520070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1070,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &263231906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1123,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &385739490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,6 +1181,8 @@ MonoBehaviour:
   - RightInnerBreast
   - LeftOuterBreast
   - LeftInnerBreast
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &394088273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1234,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &400699006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1287,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &423044636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1340,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &432404553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1394,8 @@ MonoBehaviour:
   maxValue: .0599999987
   modifiedBodyParts:
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &465474576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1447,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &488231339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +1500,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &508362986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1553,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &510094535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,6 +1606,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &518079762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,6 +1904,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: f40918d0d5e5e9a4eb8d9102ffa9df61, type: 2}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11100000, guid: f40918d0d5e5e9a4eb8d9102ffa9df61, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40918d0d5e5e9a4eb8d9102ffa9df61, type: 2}
   m_RootGameObject: {fileID: 1143050569}
@@ -2019,6 +2071,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &579732167
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,6 +2124,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &589340296
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2177,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &613108080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,6 +2231,8 @@ MonoBehaviour:
   maxValue: -.0599999987
   modifiedBodyParts:
   - LeftShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &626024600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2284,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &661739765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2342,8 @@ MonoBehaviour:
   - RightInnerBreast
   - LeftOuterBreast
   - LeftInnerBreast
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &690893236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,6 +2395,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &714977269
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,6 +2448,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &732340004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,6 +2501,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &762761459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,6 +2554,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &766264449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2720,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &797273642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2805,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Spine1Adjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &825298149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2858,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &825547613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,6 +2911,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &872838358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,6 +2965,8 @@ MonoBehaviour:
   maxValue: -.0480000004
   modifiedBodyParts:
   - LeftShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &879538281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,6 +3109,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &934551297
 GameObject:
   m_ObjectHideFlags: 0
@@ -3078,6 +3162,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &948200138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3129,6 +3215,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &980103653
 GameObject:
   m_ObjectHideFlags: 0
@@ -3512,6 +3600,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1015185136
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,6 +3716,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1030708500
 GameObject:
   m_ObjectHideFlags: 0
@@ -3677,6 +3769,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!28 &1059980908
 Texture2D:
   m_ObjectHideFlags: 0
@@ -3753,6 +3847,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1091229688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3880,6 +3976,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1117986934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,6 +4029,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1134028390
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,6 +4226,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftShoulder
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1153045214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,6 +4281,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1218136075
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,6 +4335,8 @@ MonoBehaviour:
   maxValue: -.0480000004
   modifiedBodyParts:
   - LeftShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1224030386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,6 +4389,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1225330431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4334,6 +4442,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1245875893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4386,6 +4496,8 @@ MonoBehaviour:
   maxValue: .0599999987
   modifiedBodyParts:
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1247896396
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,6 +4549,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1248868376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4602,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1250679324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4539,6 +4655,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1260495005
 GameObject:
   m_ObjectHideFlags: 0
@@ -4590,6 +4708,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1278074358
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,6 +4761,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1289554241
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,6 +4965,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1362770030
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,6 +5020,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftShoulder
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1411826933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,6 +5073,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1453589691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5064,6 +5192,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1469851811
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +5246,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - NeckAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1473405448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,6 +5299,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1475427954
 GameObject:
   m_ObjectHideFlags: 0
@@ -5220,6 +5354,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftShoulder
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1481555464
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,6 +5409,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1482350187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5398,6 +5536,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1506378137
 GameObject:
   m_ObjectHideFlags: 0
@@ -5450,6 +5590,8 @@ MonoBehaviour:
   maxValue: .0599999987
   modifiedBodyParts:
   - RightShoulder
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1508817035
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,6 +5643,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1521184438
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,6 +5696,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1001 &1548621053
 Prefab:
   m_ObjectHideFlags: 0
@@ -5651,6 +5797,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1558741551
 GameObject:
   m_ObjectHideFlags: 0
@@ -5702,6 +5850,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1575127103
 GameObject:
   m_ObjectHideFlags: 0
@@ -5753,6 +5903,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1581923498
 GameObject:
   m_ObjectHideFlags: 0
@@ -5804,6 +5956,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1590562449
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,6 +6009,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1591325756
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,6 +6063,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1595616930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +6117,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1613559622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6010,6 +6170,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1631667972
 GameObject:
   m_ObjectHideFlags: 0
@@ -6061,6 +6223,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1638547038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6112,6 +6276,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1658971679
 GameObject:
   m_ObjectHideFlags: 0
@@ -6163,6 +6329,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1661740469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6216,6 +6384,8 @@ MonoBehaviour:
   modifiedBodyParts:
   - LeftFoot
   - RightFoot
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1672999868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,6 +6437,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1682604560
 GameObject:
   m_ObjectHideFlags: 0
@@ -6318,6 +6490,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1698005036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,6 +6543,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1723688774
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,6 +6596,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLegAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1733177698
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,6 +6649,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightUpLeg
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1740033318
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,6 +6702,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1769262290
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +6760,8 @@ MonoBehaviour:
   - RightInnerBreast
   - LeftOuterBreast
   - LeftInnerBreast
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1772731587
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,6 +6935,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1803797827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6802,6 +6988,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1829964688
 GameObject:
   m_ObjectHideFlags: 0
@@ -6853,6 +7041,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LeftArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1831952008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,6 +7160,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackBelly
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1862186292
 GameObject:
   m_ObjectHideFlags: 0
@@ -7080,6 +7272,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - NeckAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1875296713
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,6 +7520,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBack
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1971518513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7377,6 +7573,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1980491357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,6 +7627,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &1997239440
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,6 +7680,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightForeArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2033541551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,6 +7733,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBackAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2045310066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7583,6 +7787,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - NeckAdjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2054243460
 GameObject:
   m_ObjectHideFlags: 0
@@ -7677,6 +7883,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Global
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2079936341
 GameObject:
   m_ObjectHideFlags: 0
@@ -7755,6 +7963,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - LowerBack
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!4 &2080556027
 Transform:
   m_ObjectHideFlags: 0
@@ -7818,6 +8028,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightHand
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2085570664
 GameObject:
   m_ObjectHideFlags: 0
@@ -7870,6 +8082,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Spine1Adjust
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2127134049
 GameObject:
   m_ObjectHideFlags: 0
@@ -7921,6 +8135,8 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - RightArm
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976
 --- !u!1 &2141120437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7972,3 +8188,5 @@ MonoBehaviour:
   maxValue: 1
   modifiedBodyParts:
   - Head
+  minimumWarningRange: .100000001
+  maximumWarningRange: .899999976

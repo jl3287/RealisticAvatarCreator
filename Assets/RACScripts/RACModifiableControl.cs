@@ -28,6 +28,9 @@ public class RACModifiableControl : MonoBehaviour
 	
 	public string[] modifiedBodyParts = {"Global"};
 
+	public float minimumWarningRange = 0.1f;
+	public float maximumWarningRange = 0.9f;
+
 	public float GetDeviation()
 	{
 		float startingValue = this.StartingValue;

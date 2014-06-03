@@ -20,11 +20,9 @@ public class RACSliderControl : SliderControl
 	private float minmumRecordedTime = 0.1f;
 
 	private RACWarningEffect warningEffect;
-	
-	[SerializeField]
-	private float minimumWarningRange = 0.1f;
-	[SerializeField]
-	private float maximumWarningRange = 0.9f;
+
+	public float minimumWarningRange {get; set;}
+	public float maximumWarningRange {get; set;}
 
 	protected override void Start ()
 	{

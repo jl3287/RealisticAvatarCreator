@@ -38,10 +38,7 @@ public class RACCustomization : UMACustomization
 		{
 			RACModifiableControl curControl = this.modifiableControlList[iSliderIndex];
 			curControl.sliderControl = InstantiateSlider(curControl.sliderName, curControl.sliderPosition.x, curControl.sliderPosition.y);
-			curControl.sliderControl.actualValue = curControl.DefaultValue;
-			curControl.sliderControl.minValue = curControl.minValue;
-			curControl.sliderControl.maxValue = curControl.maxValue;
-			curControl.StartingValue = curControl.DefaultValue;
+			CopyModifiableControlDataIntoSliderControl(curControl, curControl);
 
 			this.modifiableControlDict.Add(curControl.sliderName, curControl);
 		}
@@ -56,11 +53,8 @@ public class RACCustomization : UMACustomization
 
 			if (this.modifiableControlDict.ContainsKey(newControlForValues.sliderName))
 			{
-				RACModifiableControl curControl = this.modifiableControlDict[newControlForValues.sliderName];
-				curControl.sliderControl.actualValue = newControlForValues.DefaultValue;
-				curControl.sliderControl.minValue = newControlForValues.minValue;
-				curControl.sliderControl.maxValue = newControlForValues.maxValue;
-				curControl.StartingValue = newControlForValues.DefaultValue;
+				RACModifiableControl curModifiableControl = this.modifiableControlDict[newControlForValues.sliderName];
+				CopyModifiableControlDataIntoSliderControl(curModifiableControl, newControlForValues);
 			}
 			else
 			{
@@ -69,6 +63,19 @@ public class RACCustomization : UMACustomization
 		}
 
 		UpdateUMAShape();
+	}
+
+	private void CopyModifiableControlDataIntoSliderControl(RACModifiableControl target, RACModifiableControl source)
+	{
+		RACSliderControl targetSlider = target.sliderControl as RACSliderControl;
+
+		targetSlider.actualValue = source.DefaultValue;
+		targetSlider.minValue = source.minValue;
+		targetSlider.maxValue = source.maxValue;
+		targetSlider.minimumWarningRange = source.minimumWarningRange;
+		targetSlider.maximumWarningRange = source.maximumWarningRange;
+		
+		target.StartingValue = source.DefaultValue;
 	}
 
 	public override void TransferValues ()
